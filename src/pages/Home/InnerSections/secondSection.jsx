@@ -1,14 +1,23 @@
 import React from 'react';
+import ProductFlatPattern1 from '../../../assets/Products/B102FlatPattern.jpg';
+import ProductFlatPattern2 from '../../../assets/Products/B103FlatPattern.jpg';
+import ProductFlatPattern3 from '../../../assets/Products/B104FlatPattern.jpg';
+import ProductDislpay4 from '../../../assets/Products/B102Display.jpg';
+import ProductDislpay5 from '../../../assets/Products/B102Pillow.jpg';
+import ProductDislpay6 from '../../../assets/Products/B104Display.jpg';
+import ProductDislpay7 from '../../../assets/Products/B104Pillow.jpg';
+import ProductDislpay8 from '../../../assets/Products/B103Display.jpg';
+import ProductDislpay9 from '../../../assets/Products/B103Pillow.jpg';
 
 const SecondSection = () => {
     const lookbookItems = [
         {
             title: "Elegant Floral Bedsheet Collection",
-            backgroundImage: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719636720988-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(2).jpeg",
+            backgroundImage: ProductFlatPattern1,
             items: [
                 {
                     title: "Elegant Floral Bedsheet - Queen Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719636720988-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(2).jpeg",
+                    image: ProductDislpay4,
                     price: "$89.99",
                     regularPrice: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-queen",
@@ -17,7 +26,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Elegant Floral Bedsheet - King Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719636720988-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(2).jpeg",
+                    image: ProductDislpay5,
                     price: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-king",
                     position: { top: '90%', left: '79%' },
@@ -26,35 +35,12 @@ const SecondSection = () => {
             ]
         },
         {
-            title: "Luxury Silk Bedsheet Set",
-            backgroundImage: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719635623708-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(1).jpeg",
-            items: [
-                {
-                    title: "Luxury Silk Bedsheet - Queen Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719635623708-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(1).jpeg",
-                    price: "$149.00",
-                    regularPrice: "$179.00",
-                    detailLink: "/products/luxury-silk-bedsheet-queen",
-                    position: { top: '39%', left: '39%' },
-                    modalId: "luxury-silk-queen-modal"
-                },
-                {
-                    title: "Luxury Silk Bedsheet - King Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719635623708-WhatsApp%20Image%202024-06-26%20at%2017.55.09%20(1).jpeg",
-                    price: "$169.00",
-                    detailLink: "/products/luxury-silk-bedsheet-king",
-                    position: { top: '56%', left: '61%' },
-                    modalId: "luxury-silk-king-modal"
-                }
-            ]
-        },
-        {
             title: "Vintage Floral Print Bedsheet",
-            backgroundImage: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719637118313-WhatsApp%20Image%202024-06-26%20at%2017.55.07.jpeg",
+            backgroundImage: ProductFlatPattern3,
             items: [
                 {
                     title: "Vintage Floral Bedsheet - Double Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719637118313-WhatsApp%20Image%202024-06-26%20at%2017.55.07.jpeg",
+                    image: ProductDislpay6,
                     price: "$79.90",
                     regularPrice: "$89.90",
                     detailLink: "/products/vintage-floral-bedsheet-double",
@@ -63,14 +49,37 @@ const SecondSection = () => {
                 },
                 {
                     title: "Vintage Floral Bedsheet - Single Size",
-                    image: "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=288,h=288,fit=crop,q=100/cdn-ecommerce/store_01J1H1T34TAT0G150S6V6BNWS6%2Fassets%2F1719637118313-WhatsApp%20Image%202024-06-26%20at%2017.55.07.jpeg",
+                    image: ProductDislpay7,
                     price: "$59.90",
                     detailLink: "/products/vintage-floral-bedsheet-single",
                     position: { top: '80%', left: '51%' },
                     modalId: "vintage-floral-single-modal"
                 }
             ]
-        }
+        },
+        {
+            title: "Luxury Silk Bedsheet Set",
+            backgroundImage: ProductFlatPattern2,
+            items: [
+                {
+                    title: "Luxury Silk Bedsheet - Queen Size",
+                    image: ProductDislpay8,
+                    price: "$149.00",
+                    regularPrice: "$179.00",
+                    detailLink: "/products/luxury-silk-bedsheet-queen",
+                    position: { top: '39%', left: '39%' },
+                    modalId: "luxury-silk-queen-modal"
+                },
+                {
+                    title: "Luxury Silk Bedsheet - King Size",
+                    image: ProductDislpay9,
+                    price: "$169.00",
+                    detailLink: "/products/luxury-silk-bedsheet-king",
+                    position: { top: '56%', left: '61%' },
+                    modalId: "luxury-silk-king-modal"
+                }
+            ]
+        },
         
     ];
 

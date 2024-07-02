@@ -1,52 +1,60 @@
 import React from 'react';
+import ProductDislpay1 from '../../../assets/Products/B102Display.jpg';
+import ProductDislpay2 from '../../../assets/Products/B102Closeup.jpg';
+import ProductDislpay3 from '../../../assets/Products/B103Display.jpg';
+import ProductDislpay4 from '../../../assets/Products/B103Closeup.jpg';
+import ProductDislpay5 from '../../../assets/Products/B104Display.jpg';
+import ProductDislpay6 from '../../../assets/Products/B104Closeup.jpg';
+import ProductDislpay7 from '../../../assets/Products/B105Display.jpg';
+import ProductDislpay8 from '../../../assets/Products/B105Closeup.jpg';
 
 const productData = [
     {
         id: 1,
         name: 'Geometric Design Bedsheet',
         price: '$39.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1675537843200-78c1a0ea1736?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1613395804277-ff52684350ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay1,
+        imgSecondary: ProductDislpay2,
         url: '/products/geometric-design-bedsheet',
     },
     {
         id: 2,
         name: 'Paisley Pattern Bedsheet',
         price: '$34.99',
-        imgPrimary: 'https://images.unsplash.com/photo-1566378955258-7633cb5c823e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1545552663-0eb050bb04c3?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay3,
+        imgSecondary: ProductDislpay4,
         url: '/products/paisley-pattern-bedsheet',
     },
     {
         id: 3,
         name: 'Classic White Bedsheet',
         price: '$25.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1678790909042-daaceb35933d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1639813806535-b206d3dcf3b6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay5,
+        imgSecondary: ProductDislpay6,
         url: '/products/classic-white-bedsheet',
     },
     {
         id: 4,
         name: 'Vintage Striped Bedsheet',
         price: '$37.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1678297270523-8775c817d0b3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1692455067486-d4637182a61c?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay7,
+        imgSecondary: ProductDislpay8,
         url: '/products/vintage-striped-bedsheet',
     },
     {
         id: 5,
         name: 'Geometric Design Bedsheet',
         price: '$39.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1675537843200-78c1a0ea1736?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1613395804277-ff52684350ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay1,
+        imgSecondary: ProductDislpay2,
         url: '/products/geometric-design-bedsheet',
     },
     {
         id: 6,
         name: 'Paisley Pattern Bedsheet',
         price: '$34.99',
-        imgPrimary: 'https://images.unsplash.com/photo-1566378955258-7633cb5c823e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1545552663-0eb050bb04c3?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay3,
+        imgSecondary: ProductDislpay4,
         url: '/products/paisley-pattern-bedsheet',
         discount: -50
     },
@@ -54,16 +62,16 @@ const productData = [
         id: 7,
         name: 'Classic White Bedsheet',
         price: '$25.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1678790909042-daaceb35933d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1639813806535-b206d3dcf3b6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay5,
+        imgSecondary: ProductDislpay6,
         url: '/products/classic-white-bedsheet',
     },
     {
         id: 8,
         name: 'Vintage Striped Bedsheet',
         price: '$37.99',
-        imgPrimary: 'https://plus.unsplash.com/premium_photo-1678297270523-8775c817d0b3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        imgSecondary: 'https://images.unsplash.com/photo-1692455067486-d4637182a61c?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imgPrimary: ProductDislpay7,
+        imgSecondary: ProductDislpay8,
         url: '/products/vintage-striped-bedsheet',
         discount: -20
     },

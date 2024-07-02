@@ -773,7 +773,7 @@ const Navbar = () => {
                                             <ul className="main-menu__nav list-unstyled d-flex flex-wrap m-0">
                                                 <li className="main-menu__nav-item active">
                                                     <a
-                                                        href="/lettolino/home"
+                                                        href="/My-lettolino/home"
                                                         title="Home"
                                                     >
                                                         Home
@@ -782,7 +782,7 @@ const Navbar = () => {
                                                 </li>
                                                 <li className="main-menu__nav-item">
                                                     <a
-                                                        href="/lettolino/shop"
+                                                        href="/My-lettolino/shop"
                                                         title="Shops"
                                                     >
                                                         Shops
@@ -1198,7 +1198,7 @@ const Navbar = () => {
                                                 <li className="main-menu__nav-item">
                                                     <a
                                                         className="main-menu__link"
-                                                        href="/lettolino/about"
+                                                        href="/My-lettolino/about"
                                                         title="About"
                                                     >
                                                         About
@@ -1207,7 +1207,7 @@ const Navbar = () => {
                                                 <li className="main-menu__nav-item">
                                                     <a
                                                         className="main-menu__link"
-                                                        href="/lettolino/contact"
+                                                        href="/My-lettolino/contact"
                                                         title="Contact"
                                                     >
                                                         Contact

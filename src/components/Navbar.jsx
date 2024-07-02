@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -772,446 +773,40 @@ const Navbar = () => {
                                         <nav className="main-menu__wrap">
                                             <ul className="main-menu__nav list-unstyled d-flex flex-wrap m-0">
                                                 <li className="main-menu__nav-item active">
-                                                    <a
-                                                        href="/My-lettolino/home"
+                                                    <NavLink
+                                                        to="/My-lettolino/home"
                                                         title="Home"
                                                     >
                                                         Home
 
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li className="main-menu__nav-item">
-                                                    <a
-                                                        href="/My-lettolino/shop"
+                                                    <NavLink
+                                                        to="/My-lettolino/shop"
                                                         title="Shops"
                                                     >
                                                         Shops
 
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
-                                                {/* <li className="main-menu__nav-item menu-dropdown">
-                                                    <a
-                                                        href="/collections"
-                                                        title="Collections"
-                                                    >
-                                                        Collections{' '}
-                                                        <svg
-                                                            aria-hidden="true"
-                                                            className="ms-1"
-                                                            focusable="false"
-                                                            height="15px"
-                                                            role="presentation"
-                                                            viewBox="0 0 10 6"
-                                                            width="10px"
-                                                        >
-                                                            <path
-                                                                clipRule="evenodd"
-                                                                d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-                                                                fill="currentColor"
-                                                                fillRule="evenodd"
-                                                            />
-                                                        </svg>
-                                                    </a>
-                                                    <div
-                                                        className="menu-dropdown__content menu-dropdown__content--megamenu mx-auto start-0 end-0"
-                                                        style={{
-                                                            maxWidth: '1200px'
-                                                        }}
-                                                    >
-                                                        <div className="menu-row row">
-                                                            <div
-                                                                className="menu-row__col menu-row__col--100 mb-4"
-                                                                style={{
-                                                                    order: '3'
-                                                                }}
-                                                            >
-                                                                <div className="megamenu-html">
-                                                                    <div className="megamenu-html__content">
-                                                                        <div
-                                                                            className="pt-4"
-                                                                            style={{
-                                                                                borderTop: '1px solid #e5e5e5'
-                                                                            }}
-                                                                        >
-                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices suscipit suscipit. Aliquam porta, augue eget imperdiet varius, lectus purus faucibus arcu, vel facilisis erat mauris quis nisi. Proin ac consequat augue. Suspendisse viverra lobortis risus, eu sagittis enim fringilla quis. Donec non nisl in dui iaculis sagittis
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                className="megamenu-collection-list menu-row__col menu-row__col--100"
-                                                                style={{
-                                                                    order: '1'
-                                                                }}
-                                                            >
-                                                                <div className="menu-row row">
-                                                                    <div className="menu-row__col menu-row__col--20 mb-4">
-                                                                        <div className="collImage mb-3">
-                                                                            <a
-                                                                                className="d-block overflow-hidden"
-                                                                                href="/collections/bags"
-                                                                            >
-                                                                                <div className="card_wrap">
-                                                                                    <div
-                                                                                        aria-label="Bags"
-                                                                                        className="card__image position-relative js lazyloaded"
-                                                                                        data-alt="Bags"
-                                                                                        data-bgset="//vela-demo-1.myshopify.com/cdn/shop/collections/5_180x.jpg?v=1518446451 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_360x.jpg?v=1518446451 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_540x.jpg?v=1518446451 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_720x.jpg?v=1518446451 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_800x1000.jpg?v=1518446451 800w"
-                                                                                        style={{
-                                                                                            backgroundImage: 'url("https://vela-demo-1.myshopify.com/cdn/shop/collections/5_360x.jpg?v=1518446451")',
-                                                                                            paddingTop: '125%'
-                                                                                        }}
-                                                                                    >
-                                                                                        <noscript>
-                                                                                            <img
-                                                                                                className="img-fluid noscript"
-                                                                                                src="//vela-demo-1.myshopify.com/cdn/shop/collections/5.jpg?v=1518446451"
-                                                                                            />
-                                                                                        </noscript>
-                                                                                        <div className="pre-loading position-absolute">
-                                                                                            <span
-                                                                                                className="pre-loading__bar"
-                                                                                                style={{
-                                                                                                    display: 'inline-block',
-                                                                                                    width: '100%'
-                                                                                                }}
-                                                                                            />
-                                                                                            <div className="vela-loading__icon">
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <picture
-                                                                                            style={{
-                                                                                                display: 'none'
-                                                                                            }}
-                                                                                        >
-                                                                                            <source
-                                                                                                data-srcset="//vela-demo-1.myshopify.com/cdn/shop/collections/5_180x.jpg?v=1518446451 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_360x.jpg?v=1518446451 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_540x.jpg?v=1518446451 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_720x.jpg?v=1518446451 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_800x1000.jpg?v=1518446451 800w"
-                                                                                                sizes="192px"
-                                                                                                srcSet="//vela-demo-1.myshopify.com/cdn/shop/collections/5_180x.jpg?v=1518446451 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_360x.jpg?v=1518446451 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_540x.jpg?v=1518446451 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_720x.jpg?v=1518446451 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/5_800x1000.jpg?v=1518446451 800w"
-                                                                                            />
-                                                                                            <img
-                                                                                                alt=""
-                                                                                                className="lazyautosizes lazyloaded ls-is-cached"
-                                                                                                data-parent-fit="contain"
-                                                                                                data-sizes="auto"
-                                                                                                sizes="192px"
-                                                                                            />
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <h5 className="collTitle mb-0 text-center">
-                                                                            <a
-                                                                                href="/collections/bags"
-                                                                                title="Bags"
-                                                                            >
-                                                                                {' '}Bags
-                                                                            </a>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div className="menu-row__col menu-row__col--20 mb-4">
-                                                                        <div className="collImage mb-3">
-                                                                            <a
-                                                                                className="d-block overflow-hidden"
-                                                                                href="/collections/denim"
-                                                                            >
-                                                                                <div className="card_wrap">
-                                                                                    <div
-                                                                                        aria-label="Denim"
-                                                                                        className="card__image position-relative js lazyloaded"
-                                                                                        data-alt="Denim"
-                                                                                        data-bgset="//vela-demo-1.myshopify.com/cdn/shop/collections/6_180x.jpg?v=1518446467 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_360x.jpg?v=1518446467 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_540x.jpg?v=1518446467 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_720x.jpg?v=1518446467 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_800x1000.jpg?v=1518446467 800w"
-                                                                                        style={{
-                                                                                            backgroundImage: 'url("https://vela-demo-1.myshopify.com/cdn/shop/collections/6_360x.jpg?v=1518446467")',
-                                                                                            paddingTop: '125%'
-                                                                                        }}
-                                                                                    >
-                                                                                        <noscript>
-                                                                                            <img
-                                                                                                className="img-fluid noscript"
-                                                                                                src="//vela-demo-1.myshopify.com/cdn/shop/collections/6.jpg?v=1518446467"
-                                                                                            />
-                                                                                        </noscript>
-                                                                                        <div className="pre-loading position-absolute">
-                                                                                            <span
-                                                                                                className="pre-loading__bar"
-                                                                                                style={{
-                                                                                                    display: 'inline-block',
-                                                                                                    width: '100%'
-                                                                                                }}
-                                                                                            />
-                                                                                            <div className="vela-loading__icon">
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <picture
-                                                                                            style={{
-                                                                                                display: 'none'
-                                                                                            }}
-                                                                                        >
-                                                                                            <source
-                                                                                                data-srcset="//vela-demo-1.myshopify.com/cdn/shop/collections/6_180x.jpg?v=1518446467 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_360x.jpg?v=1518446467 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_540x.jpg?v=1518446467 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_720x.jpg?v=1518446467 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_800x1000.jpg?v=1518446467 800w"
-                                                                                                sizes="192px"
-                                                                                                srcSet="//vela-demo-1.myshopify.com/cdn/shop/collections/6_180x.jpg?v=1518446467 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_360x.jpg?v=1518446467 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_540x.jpg?v=1518446467 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_720x.jpg?v=1518446467 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/6_800x1000.jpg?v=1518446467 800w"
-                                                                                            />
-                                                                                            <img
-                                                                                                alt=""
-                                                                                                className="lazyautosizes lazyloaded ls-is-cached"
-                                                                                                data-parent-fit="contain"
-                                                                                                data-sizes="auto"
-                                                                                                sizes="192px"
-                                                                                            />
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <h5 className="collTitle mb-0 text-center">
-                                                                            <a
-                                                                                href="/collections/denim"
-                                                                                title="Denim"
-                                                                            >
-                                                                                {' '}Denim
-                                                                            </a>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div className="menu-row__col menu-row__col--20 mb-4">
-                                                                        <div className="collImage mb-3">
-                                                                            <a
-                                                                                className="d-block overflow-hidden"
-                                                                                href="/collections/dress"
-                                                                            >
-                                                                                <div className="card_wrap">
-                                                                                    <div
-                                                                                        aria-label="Dress"
-                                                                                        className="card__image position-relative js lazyloaded"
-                                                                                        data-alt="Dress"
-                                                                                        data-bgset="//vela-demo-1.myshopify.com/cdn/shop/collections/3_180x.jpg?v=1518446413 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_360x.jpg?v=1518446413 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_540x.jpg?v=1518446413 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_720x.jpg?v=1518446413 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_800x1000.jpg?v=1518446413 800w"
-                                                                                        style={{
-                                                                                            backgroundImage: 'url("https://vela-demo-1.myshopify.com/cdn/shop/collections/3_360x.jpg?v=1518446413")',
-                                                                                            paddingTop: '125%'
-                                                                                        }}
-                                                                                    >
-                                                                                        <noscript>
-                                                                                            <img
-                                                                                                className="img-fluid noscript"
-                                                                                                src="//vela-demo-1.myshopify.com/cdn/shop/collections/3.jpg?v=1518446413"
-                                                                                            />
-                                                                                        </noscript>
-                                                                                        <div className="pre-loading position-absolute">
-                                                                                            <span
-                                                                                                className="pre-loading__bar"
-                                                                                                style={{
-                                                                                                    display: 'inline-block',
-                                                                                                    width: '100%'
-                                                                                                }}
-                                                                                            />
-                                                                                            <div className="vela-loading__icon">
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <picture
-                                                                                            style={{
-                                                                                                display: 'none'
-                                                                                            }}
-                                                                                        >
-                                                                                            <source
-                                                                                                data-srcset="//vela-demo-1.myshopify.com/cdn/shop/collections/3_180x.jpg?v=1518446413 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_360x.jpg?v=1518446413 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_540x.jpg?v=1518446413 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_720x.jpg?v=1518446413 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_800x1000.jpg?v=1518446413 800w"
-                                                                                                sizes="192px"
-                                                                                                srcSet="//vela-demo-1.myshopify.com/cdn/shop/collections/3_180x.jpg?v=1518446413 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_360x.jpg?v=1518446413 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_540x.jpg?v=1518446413 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_720x.jpg?v=1518446413 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/3_800x1000.jpg?v=1518446413 800w"
-                                                                                            />
-                                                                                            <img
-                                                                                                alt=""
-                                                                                                className="lazyautosizes lazyloaded ls-is-cached"
-                                                                                                data-parent-fit="contain"
-                                                                                                data-sizes="auto"
-                                                                                                sizes="192px"
-                                                                                            />
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <h5 className="collTitle mb-0 text-center">
-                                                                            <a
-                                                                                href="/collections/dress"
-                                                                                title="Dress"
-                                                                            >
-                                                                                {' '}Dress
-                                                                            </a>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div className="menu-row__col menu-row__col--20 mb-4">
-                                                                        <div className="collImage mb-3">
-                                                                            <a
-                                                                                className="d-block overflow-hidden"
-                                                                                href="/collections/shoes"
-                                                                            >
-                                                                                <div className="card_wrap">
-                                                                                    <div
-                                                                                        aria-label="Shoes"
-                                                                                        className="card__image position-relative js lazyloaded"
-                                                                                        data-alt="Shoes"
-                                                                                        data-bgset="//vela-demo-1.myshopify.com/cdn/shop/collections/9_180x.jpg?v=1518446493 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_360x.jpg?v=1518446493 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_540x.jpg?v=1518446493 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_720x.jpg?v=1518446493 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_800x1000.jpg?v=1518446493 800w"
-                                                                                        style={{
-                                                                                            backgroundImage: 'url("https://vela-demo-1.myshopify.com/cdn/shop/collections/9_360x.jpg?v=1518446493")',
-                                                                                            paddingTop: '125%'
-                                                                                        }}
-                                                                                    >
-                                                                                        <noscript>
-                                                                                            <img
-                                                                                                className="img-fluid noscript"
-                                                                                                src="//vela-demo-1.myshopify.com/cdn/shop/collections/9.jpg?v=1518446493"
-                                                                                            />
-                                                                                        </noscript>
-                                                                                        <div className="pre-loading position-absolute">
-                                                                                            <span
-                                                                                                className="pre-loading__bar"
-                                                                                                style={{
-                                                                                                    display: 'inline-block',
-                                                                                                    width: '100%'
-                                                                                                }}
-                                                                                            />
-                                                                                            <div className="vela-loading__icon">
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <picture
-                                                                                            style={{
-                                                                                                display: 'none'
-                                                                                            }}
-                                                                                        >
-                                                                                            <source
-                                                                                                data-srcset="//vela-demo-1.myshopify.com/cdn/shop/collections/9_180x.jpg?v=1518446493 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_360x.jpg?v=1518446493 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_540x.jpg?v=1518446493 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_720x.jpg?v=1518446493 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_800x1000.jpg?v=1518446493 800w"
-                                                                                                sizes="192px"
-                                                                                                srcSet="//vela-demo-1.myshopify.com/cdn/shop/collections/9_180x.jpg?v=1518446493 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_360x.jpg?v=1518446493 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_540x.jpg?v=1518446493 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_720x.jpg?v=1518446493 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/9_800x1000.jpg?v=1518446493 800w"
-                                                                                            />
-                                                                                            <img
-                                                                                                alt=""
-                                                                                                className="lazyautosizes lazyloaded ls-is-cached"
-                                                                                                data-parent-fit="contain"
-                                                                                                data-sizes="auto"
-                                                                                                sizes="192px"
-                                                                                            />
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <h5 className="collTitle mb-0 text-center">
-                                                                            <a
-                                                                                href="/collections/shoes"
-                                                                                title="Shoes"
-                                                                            >
-                                                                                {' '}Shoes
-                                                                            </a>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div className="menu-row__col menu-row__col--20 mb-4">
-                                                                        <div className="collImage mb-3">
-                                                                            <a
-                                                                                className="d-block overflow-hidden"
-                                                                                href="/collections/t-shirts"
-                                                                            >
-                                                                                <div className="card_wrap">
-                                                                                    <div
-                                                                                        aria-label="T-Shirts"
-                                                                                        className="card__image position-relative js lazyloaded"
-                                                                                        data-alt="T-Shirts"
-                                                                                        data-bgset="//vela-demo-1.myshopify.com/cdn/shop/collections/7_180x.jpg?v=1518446474 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_360x.jpg?v=1518446474 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_540x.jpg?v=1518446474 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_720x.jpg?v=1518446474 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_800x1000.jpg?v=1518446474 800w"
-                                                                                        style={{
-                                                                                            backgroundImage: 'url("https://vela-demo-1.myshopify.com/cdn/shop/collections/7_360x.jpg?v=1518446474")',
-                                                                                            paddingTop: '125%'
-                                                                                        }}
-                                                                                    >
-                                                                                        <noscript>
-                                                                                            <img
-                                                                                                className="img-fluid noscript"
-                                                                                                src="//vela-demo-1.myshopify.com/cdn/shop/collections/7.jpg?v=1518446474"
-                                                                                            />
-                                                                                        </noscript>
-                                                                                        <div className="pre-loading position-absolute">
-                                                                                            <span
-                                                                                                className="pre-loading__bar"
-                                                                                                style={{
-                                                                                                    display: 'inline-block',
-                                                                                                    width: '100%'
-                                                                                                }}
-                                                                                            />
-                                                                                            <div className="vela-loading__icon">
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                                <span />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <picture
-                                                                                            style={{
-                                                                                                display: 'none'
-                                                                                            }}
-                                                                                        >
-                                                                                            <source
-                                                                                                data-srcset="//vela-demo-1.myshopify.com/cdn/shop/collections/7_180x.jpg?v=1518446474 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_360x.jpg?v=1518446474 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_540x.jpg?v=1518446474 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_720x.jpg?v=1518446474 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_800x1000.jpg?v=1518446474 800w"
-                                                                                                sizes="192px"
-                                                                                                srcSet="//vela-demo-1.myshopify.com/cdn/shop/collections/7_180x.jpg?v=1518446474 180w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_360x.jpg?v=1518446474 360w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_540x.jpg?v=1518446474 540w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_720x.jpg?v=1518446474 720w ,//vela-demo-1.myshopify.com/cdn/shop/collections/7_800x1000.jpg?v=1518446474 800w"
-                                                                                            />
-                                                                                            <img
-                                                                                                alt=""
-                                                                                                className="lazyautosizes lazyloaded ls-is-cached"
-                                                                                                data-parent-fit="contain"
-                                                                                                data-sizes="auto"
-                                                                                                sizes="192px"
-                                                                                            />
-                                                                                        </picture>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <h5 className="collTitle mb-0 text-center">
-                                                                            <a
-                                                                                href="/collections/t-shirts"
-                                                                                title="T-Shirts"
-                                                                            >
-                                                                                {' '}T-Shirts
-                                                                            </a>
-                                                                        </h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li> */}
                                                 <li className="main-menu__nav-item">
-                                                    <a
+                                                    <NavLink
                                                         className="main-menu__link"
-                                                        href="/My-lettolino/about"
+                                                        to="/My-lettolino/about"
                                                         title="About"
                                                     >
                                                         About
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                                 <li className="main-menu__nav-item">
-                                                    <a
+                                                    <NavLink
                                                         className="main-menu__link"
-                                                        href="/My-lettolino/contact"
+                                                        to="/My-lettolino/contact"
                                                         title="Contact"
                                                     >
                                                         Contact
-                                                    </a>
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </nav>

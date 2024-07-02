@@ -33,7 +33,9 @@ const FirstSection = () => {
                                         Discover our exclusive range of meticulously crafted bedsheets for a <br /> touch of artistry and elegance.
                                     </div>
                                     <div>
-                                        <a className="btn slideshow-caption__btn bottomtop-5" href="/collections/dog-food" style={{ borderColor: '#000000', backgroundColor: '#000000', color: '#ffffff', fontSize: '14px', padding: '18px 60px' }} tabIndex={0}>
+                                        <a className="btn slideshow-caption__btn bottomtop-5" href="#"
+                                            style={{borderRadius:'30px', borderColor: '#4e4e4e', backgroundColor: '#4e4e4e', color: '#ffffff', fontSize: '14px', padding: '16px 50px' }}
+                                        >
                                             Explore
                                         </a>
                                     </div>

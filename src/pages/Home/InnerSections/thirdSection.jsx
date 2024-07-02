@@ -3,7 +3,7 @@ import React from 'react';
 const ThirdSection = () => {
     const customCss = `
         .background-parallax__text--1 {
-            color: #fe5252;
+            color: #e4a958;
             font-size: 30px;
             margin: 0 0 10px;
         }
@@ -18,19 +18,29 @@ const ThirdSection = () => {
                 font-size: 60px;
             }
         }
-        .background-parallax__text--2 {
-            color: #000000;
+        .background-parallax__text--2 a{
+            color: #121212;
             font-size: 20px;
         }
+        .background-parallax__text--2 a:hover{
+            color: #e4a958;
+        }
         @media(min-width: 768px) {
-            .background-parallax__text--2 {
+            .background-parallax__text--2 a{
                 font-size: 22px;
             }
+            .background-parallax__text--2 a:hover{
+            color: #e4a958;
+        }
         }
         @media(min-width: 1200px) {
-            .background-parallax__text--2 {
+            .background-parallax__text--2 a{
                 font-size: 30px;
+                color: #121212;
             }
+            .background-parallax__text--2 a:hover{
+            color: #e4a958;
+        }
         }
     `;
 

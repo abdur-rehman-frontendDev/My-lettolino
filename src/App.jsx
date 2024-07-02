@@ -18,13 +18,11 @@ const App = () => {
           <Navbar />
         </div>
         <Routes>
-          <Route path="/My-lettolino" element={<Navigate to="/My-lettolino/home" />} />
-          <Route path="/My-lettolino/" element={<Navigate to="/My-lettolino/home" />} />
-          <Route path="/My-lettolino/home" element={<HomePage />} />
-          <Route path="/My-lettolino/shop" element={<ShopPage />} />
-          <Route path="/My-lettolino/about" element={<AboutPage />} />
-          <Route path="/My-lettolino/contact" element={<ContactPage />} />
-          <Route path="*" element={<Navigate to="/My-lettolino/home" />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
         <Footer />
       </main>

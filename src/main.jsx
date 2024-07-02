@@ -8,7 +8,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/My-lettolino">
       <App />
     </BrowserRouter>
   </React.StrictMode>

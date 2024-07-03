@@ -4,11 +4,11 @@ const SecondSection = () => {
     const lookbookItems = [
         {
             title: "Elegant Floral Bedsheet Collection",
-            backgroundImage: 'https://i.ibb.co/G0ynBKV/B102-Flat-Pattern.jpg',
+            backgroundImage: 'https://i.ibb.co/2yxWmDj/B102-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Elegant Floral Bedsheet - Queen Size",
-                    image: 'https://i.ibb.co/3knbgJJ/B102-Display.jpg',
+                    image: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
                     price: "$89.99",
                     regularPrice: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-queen",
@@ -17,7 +17,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Elegant Floral Bedsheet - King Size",
-                    image: 'https://i.ibb.co/xFh2wGD/B102-Pillow.jpg',
+                    image: 'https://i.ibb.co/5KT1Cv6/B102-Pillow.jpg',
                     price: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-king",
                     position: { top: '90%', left: '79%' },
@@ -27,11 +27,11 @@ const SecondSection = () => {
         },
         {
             title: "Vintage Floral Print Bedsheet",
-            backgroundImage: 'https://i.ibb.co/yFYjtFV/B104-Flat-Pattern.jpg',
+            backgroundImage: 'https://i.ibb.co/TMb36Mr/B104-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Vintage Floral Bedsheet - Double Size",
-                    image: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+                    image: 'https://i.ibb.co/qFY56J9/B104-Pillow.jpg',
                     price: "$79.90",
                     regularPrice: "$89.90",
                     detailLink: "/products/vintage-floral-bedsheet-double",
@@ -40,7 +40,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Vintage Floral Bedsheet - Single Size",
-                    image: 'https://i.ibb.co/rf2s9dM/B104-Pillow.jpg',
+                    image: 'https://i.ibb.co/G2xQ3Sr/B104-Display.jpg',
                     price: "$59.90",
                     detailLink: "/products/vintage-floral-bedsheet-single",
                     position: { top: '80%', left: '51%' },
@@ -50,11 +50,11 @@ const SecondSection = () => {
         },
         {
             title: "Luxury Silk Bedsheet Set",
-            backgroundImage: 'https://i.ibb.co/K2WDmM8/B103-Flat-Pattern.jpg',
+            backgroundImage: 'https://i.ibb.co/X7tDVhG/B103-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Luxury Silk Bedsheet - Queen Size",
-                    image: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+                    image: 'https://i.ibb.co/MMMWk06/B103-Closeup.jpg',
                     price: "$149.00",
                     regularPrice: "$179.00",
                     detailLink: "/products/luxury-silk-bedsheet-queen",
@@ -63,7 +63,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Luxury Silk Bedsheet - King Size",
-                    image: 'https://i.ibb.co/jyXT9Pq/B103-Pillow.jpg',
+                    image: 'https://i.ibb.co/0CbcpR1/B103-Pillow.jpg',
                     price: "$169.00",
                     detailLink: "/products/luxury-silk-bedsheet-king",
                     position: { top: '56%', left: '61%' },

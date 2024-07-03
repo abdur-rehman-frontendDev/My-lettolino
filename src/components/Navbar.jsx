@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LettoLinoGray from '../assets/LettoLino-Gray.png';
+import LettoLinoGolden from '../assets/LettoLino-Golden.png';
 
 const Navbar = () => {
     return (
@@ -14,10 +16,11 @@ const Navbar = () => {
                                         <h1 className="sr-only">Exquisite hand-printed bedsheets</h1>
                                         <NavLink to="/My-lettolino/home" className="header__heading-link d-flex">
                                             <img
-                                                alt="Velatheme"
+                                                alt="Letto & Lino"
                                                 className="header__heading-logo img-fluid"
                                                 loading="lazy"
-                                                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=228,fit=crop,q=95/d95pXDVw95c58Dkq/img-20240629-wa0044-YanBN93xnWuXx59v.jpg"
+                                                src={LettoLinoGolden}
+                                                 style={{ filter: 'drop-shadow(0px 0px 0px gold)' }}
                                             />
                                         </NavLink>
                                     </div>

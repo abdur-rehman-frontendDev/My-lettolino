@@ -1,6 +1,4 @@
 import React from 'react';
-import BGImage from '../../../assets/firstBgImg.jpeg';
-
 
 const FirstSection = () => {
     return (
@@ -12,7 +10,6 @@ const FirstSection = () => {
                     <div className="card__image position-relative js lazyloaded"
                         style={{
                             padding: '19%',
-                            // backgroundImage: `url(${BGImage})`
                             backgroundImage: 'url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/d95pXDVw95c58Dkq/img-20240629-wa0052-dJoJv4G0GvI1Kq6Q.jpg")'
                         }}
                     >
@@ -37,7 +34,7 @@ const FirstSection = () => {
                                     </div>
                                     <div>
                                         <a className="btn slideshow-caption__btn bottomtop-5" href="#"
-                                            style={{borderRadius:'30px', borderColor: '#4e4e4e', backgroundColor: '#4e4e4e', color: '#ffffff', fontSize: '14px', padding: '16px 50px' }}
+                                            style={{ borderRadius: '30px', borderColor: '#4e4e4e', backgroundColor: '#4e4e4e', color: '#ffffff', fontSize: '14px', padding: '16px 50px' }}
                                         >
                                             Explore
                                         </a>

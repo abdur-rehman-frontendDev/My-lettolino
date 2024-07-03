@@ -12,7 +12,7 @@ const SeventhSection = () => {
                             Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica
                         </div></div><div className="vela-section__content">
                             <div className="js-carousel slick-carousel slick-initialized slick-slider" data-nav="true" data-infinite="true" data-dots="false" data-autoplay="false" data-autoplayspeed={10000} data-columnone={3} data-columntwo={2} data-columnthree={1} data-columnfour={1}><button className="slick-prev slick-arrow" aria-label="Previous" type="button" style={{}}>Previous</button>
-                                <div className="slick-list draggable"><div className="slick-track" style={{ opacity: 1, width: '7410px', transform: 'translate3d(-1170px, 0px, 0px)' }}><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-3} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                <div className="slick-list draggable"><div className="slick-track" style={{ opacity: 1, width: '7410px', transform: 'translate3d(-1170px, 0px, 0px)' }}><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-3} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/top-10-fashion-styles-all-girls-must-have-in-summer" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -31,7 +31,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/top-10-fashion-styles-all-girls-must-have-in-summer" title="Top 10 fashion styles all girls must have in summer" tabIndex={-1}>Top 10 fashion styles all girls must have in summer</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-2} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-2} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/i-said-do-you-believe-in-love-at-first-sight" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -50,7 +50,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/i-said-do-you-believe-in-love-at-first-sight" title="I said do you believe in love at first sight?" tabIndex={-1}>I said do you believe in love at first sight?</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-1} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={-1} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/thanks-for-supporting-us-we-love-you-all" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -221,7 +221,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/thanks-for-supporting-us-we-love-you-all" title="Thanks for supporting us! We love you all" tabIndex={-1}>Thanks for supporting us! We love you all</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={8} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={8} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/lightly-dress-you-may-not-know-how-to-wear" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -240,7 +240,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/lightly-dress-you-may-not-know-how-to-wear" title="Lightly dress! You may not know how to wear" tabIndex={-1}>Lightly dress! You may not know how to wear</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={9} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={9} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/accessories-for-both-him-her-some-suggestions" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -259,7 +259,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/accessories-for-both-him-her-some-suggestions" title="Accessories for both him & her! Some suggestions" tabIndex={-1}>Accessories for both him &amp; her! Some suggestions</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={10} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={10} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/hipster-style-something-that-never-get-old" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -278,7 +278,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/hipster-style-something-that-never-get-old" title="Hipster style! Something that never get old" tabIndex={-1}>Hipster style! Something that never get old</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={11} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={11} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/we-know-how-to-be-shine" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -297,7 +297,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/we-know-how-to-be-shine" title="We know how to be shine" tabIndex={-1}>We know how to be shine</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={12} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={12} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/how-to-be-a-gentleman-here-is-5-tips-for-you-guy" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -316,7 +316,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/how-to-be-a-gentleman-here-is-5-tips-for-you-guy" title="How to be a gentleman? Here is 5 tips for you, guy" tabIndex={-1}>How to be a gentleman? Here is 5 tips for you, guy</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={13} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={13} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/top-10-fashion-styles-all-girls-must-have-in-summer" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -335,7 +335,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/top-10-fashion-styles-all-girls-must-have-in-summer" title="Top 10 fashion styles all girls must have in summer" tabIndex={-1}>Top 10 fashion styles all girls must have in summer</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={14} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={14} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/i-said-do-you-believe-in-love-at-first-sight" tabIndex={-1}>
                                             <div className="card_wrap">
@@ -354,7 +354,7 @@ const SeventhSection = () => {
                                                 <a className="link" href="/blogs/news/i-said-do-you-believe-in-love-at-first-sight" title="I said do you believe in love at first sight?" tabIndex={-1}>I said do you believe in love at first sight?</a>
                                             </h4></div>
                                     </div>
-                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={15} id aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
+                                </article></div><div className="slick-carousel__item slick-slide slick-cloned" data-slick-index={15} id='' aria-hidden="true" style={{ width: '390px' }} tabIndex={-1}><article className="article blog__grid  position-relative overflow-hidden">
                                     <div className="article__image position-relative">
                                         <a className="article__featured-image-link d-block" href="/blogs/news/thanks-for-supporting-us-we-love-you-all" tabIndex={-1}>
                                             <div className="card_wrap">

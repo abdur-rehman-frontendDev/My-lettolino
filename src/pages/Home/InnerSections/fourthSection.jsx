@@ -1,60 +1,52 @@
 import React from 'react';
-import ProductDislpay1 from '../../../assets/Products/B102Display.jpg';
-import ProductDislpay2 from '../../../assets/Products/B102Closeup.jpg';
-import ProductDislpay3 from '../../../assets/Products/B103Display.jpg';
-import ProductDislpay4 from '../../../assets/Products/B103Closeup.jpg';
-import ProductDislpay5 from '../../../assets/Products/B104Display.jpg';
-import ProductDislpay6 from '../../../assets/Products/B104Closeup.jpg';
-import ProductDislpay7 from '../../../assets/Products/B105Display.jpg';
-import ProductDislpay8 from '../../../assets/Products/B105Closeup.jpg';
 
 const productData = [
     {
         id: 1,
         name: 'Geometric Design Bedsheet',
         price: '$39.99',
-        imgPrimary: ProductDislpay1,
-        imgSecondary: ProductDislpay2,
+        imgPrimary: 'https://i.ibb.co/3knbgJJ/B102-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/tx0yXyd/B102-Closeup.jpg',
         url: '/products/geometric-design-bedsheet',
     },
     {
         id: 2,
         name: 'Paisley Pattern Bedsheet',
         price: '$34.99',
-        imgPrimary: ProductDislpay3,
-        imgSecondary: ProductDislpay4,
+        imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
         url: '/products/paisley-pattern-bedsheet',
     },
     {
         id: 3,
         name: 'Classic White Bedsheet',
         price: '$25.99',
-        imgPrimary: ProductDislpay5,
-        imgSecondary: ProductDislpay6,
+        imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/vdkyXM1/B104-Closeup.jpg',
         url: '/products/classic-white-bedsheet',
     },
     {
         id: 4,
         name: 'Vintage Striped Bedsheet',
         price: '$37.99',
-        imgPrimary: ProductDislpay7,
-        imgSecondary: ProductDislpay8,
+        imgPrimary: 'https://i.ibb.co/cvrCb1t/B105-Main-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/vsTKX3D/B105-Closeup.jpg',
         url: '/products/vintage-striped-bedsheet',
     },
     {
         id: 5,
         name: 'Geometric Design Bedsheet',
         price: '$39.99',
-        imgPrimary: ProductDislpay1,
-        imgSecondary: ProductDislpay2,
+        imgPrimary: 'https://i.ibb.co/3knbgJJ/B102-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/tx0yXyd/B102-Closeup.jpg',
         url: '/products/geometric-design-bedsheet',
     },
     {
         id: 6,
         name: 'Paisley Pattern Bedsheet',
         price: '$34.99',
-        imgPrimary: ProductDislpay3,
-        imgSecondary: ProductDislpay4,
+        imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
         url: '/products/paisley-pattern-bedsheet',
         discount: -50
     },
@@ -62,16 +54,16 @@ const productData = [
         id: 7,
         name: 'Classic White Bedsheet',
         price: '$25.99',
-        imgPrimary: ProductDislpay5,
-        imgSecondary: ProductDislpay6,
+        imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/vdkyXM1/B104-Closeup.jpg',
         url: '/products/classic-white-bedsheet',
     },
     {
         id: 8,
         name: 'Vintage Striped Bedsheet',
         price: '$37.99',
-        imgPrimary: ProductDislpay7,
-        imgSecondary: ProductDislpay8,
+        imgPrimary: 'https://i.ibb.co/cvrCb1t/B105-Main-Display.jpg',
+        imgSecondary: 'https://i.ibb.co/vsTKX3D/B105-Closeup.jpg',
         url: '/products/vintage-striped-bedsheet',
         discount: -20
     },
@@ -142,7 +134,7 @@ const FourthSection = () => {
                                                                     </button>
                                                                 </form>
                                                             </div>
-                                                            <a className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default" href="javascript:void(0);" data-handle="jean-body-curve" title="Quickview" >
+                                                            <a className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default" href="#" data-handle="jean-body-curve" title="Quickview" >
                                                                 <svg width={18} height={18} xmlns="http://www.w3.org/2000/svg"
                                                                     xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                                                                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 1056 896">

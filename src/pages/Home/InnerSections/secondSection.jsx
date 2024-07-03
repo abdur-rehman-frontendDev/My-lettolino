@@ -1,23 +1,14 @@
-import React from 'react';
-import ProductFlatPattern1 from '../../../assets/Products/B102FlatPattern.jpg';
-import ProductFlatPattern2 from '../../../assets/Products/B103FlatPattern.jpg';
-import ProductFlatPattern3 from '../../../assets/Products/B104FlatPattern.jpg';
-import ProductDislpay4 from '../../../assets/Products/B102Display.jpg';
-import ProductDislpay5 from '../../../assets/Products/B102Pillow.jpg';
-import ProductDislpay6 from '../../../assets/Products/B104Display.jpg';
-import ProductDislpay7 from '../../../assets/Products/B104Pillow.jpg';
-import ProductDislpay8 from '../../../assets/Products/B103Display.jpg';
-import ProductDislpay9 from '../../../assets/Products/B103Pillow.jpg';
+import React from 'react'
 
 const SecondSection = () => {
     const lookbookItems = [
         {
             title: "Elegant Floral Bedsheet Collection",
-            backgroundImage: ProductFlatPattern1,
+            backgroundImage: 'https://i.ibb.co/G0ynBKV/B102-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Elegant Floral Bedsheet - Queen Size",
-                    image: ProductDislpay4,
+                    image: 'https://i.ibb.co/3knbgJJ/B102-Display.jpg',
                     price: "$89.99",
                     regularPrice: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-queen",
@@ -26,7 +17,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Elegant Floral Bedsheet - King Size",
-                    image: ProductDislpay5,
+                    image: 'https://i.ibb.co/xFh2wGD/B102-Pillow.jpg',
                     price: "$99.99",
                     detailLink: "/products/elegant-floral-bedsheet-king",
                     position: { top: '90%', left: '79%' },
@@ -36,11 +27,11 @@ const SecondSection = () => {
         },
         {
             title: "Vintage Floral Print Bedsheet",
-            backgroundImage: ProductFlatPattern3,
+            backgroundImage: 'https://i.ibb.co/yFYjtFV/B104-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Vintage Floral Bedsheet - Double Size",
-                    image: ProductDislpay6,
+                    image: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
                     price: "$79.90",
                     regularPrice: "$89.90",
                     detailLink: "/products/vintage-floral-bedsheet-double",
@@ -49,7 +40,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Vintage Floral Bedsheet - Single Size",
-                    image: ProductDislpay7,
+                    image: 'https://i.ibb.co/rf2s9dM/B104-Pillow.jpg',
                     price: "$59.90",
                     detailLink: "/products/vintage-floral-bedsheet-single",
                     position: { top: '80%', left: '51%' },
@@ -59,11 +50,11 @@ const SecondSection = () => {
         },
         {
             title: "Luxury Silk Bedsheet Set",
-            backgroundImage: ProductFlatPattern2,
+            backgroundImage: 'https://i.ibb.co/K2WDmM8/B103-Flat-Pattern.jpg',
             items: [
                 {
                     title: "Luxury Silk Bedsheet - Queen Size",
-                    image: ProductDislpay8,
+                    image: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
                     price: "$149.00",
                     regularPrice: "$179.00",
                     detailLink: "/products/luxury-silk-bedsheet-queen",
@@ -72,7 +63,7 @@ const SecondSection = () => {
                 },
                 {
                     title: "Luxury Silk Bedsheet - King Size",
-                    image: ProductDislpay9,
+                    image: 'https://i.ibb.co/jyXT9Pq/B103-Pillow.jpg',
                     price: "$169.00",
                     detailLink: "/products/luxury-silk-bedsheet-king",
                     position: { top: '56%', left: '61%' },
@@ -80,7 +71,7 @@ const SecondSection = () => {
                 }
             ]
         },
-        
+
     ];
 
     return (

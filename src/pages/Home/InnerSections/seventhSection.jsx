@@ -125,22 +125,18 @@ const SeventhSection = () => {
                                     320: {
                                         slidesPerView: 1,
                                         slidesPerGroup: 1,
-                                        slidesPerView: 1,
                                     },
                                     768: {
                                         slidesPerView: 2,
                                         slidesPerGroup: 2,
-                                        slidesPerView: 2,
                                     },
                                     1024: {
                                         slidesPerView: 3,
                                         slidesPerGroup: 3,
-                                        slidesPerView: 3,
                                     },
                                     1199: {
                                         slidesPerView: 3,
                                         slidesPerGroup: 3,
-                                        slidesPerView: 3,
                                     },
                                 }}
                             >

@@ -7,21 +7,21 @@ const SecondSection = () => {
             backgroundImage: 'https://i.ibb.co/2yxWmDj/B102-Flat-Pattern.jpg',
             items: [
                 {
-                    title: "Elegant Floral Bedsheet - Queen Size",
+                    title: "Elegant Floral Bedsheet",
                     image: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
                     price: "$89.99",
                     regularPrice: "$99.99",
-                    detailLink: "/products/elegant-floral-bedsheet-queen",
+                    detailLink: "/#",
                     position: { top: '45%', left: '59%' },
-                    modalId: "elegant-floral-queen-modal"
+                    modalId: "elegant-floral-bedsheet-modal"
                 },
                 {
-                    title: "Elegant Floral Bedsheet - King Size",
+                    title: "Elegant Floral Pillow",
                     image: 'https://i.ibb.co/5KT1Cv6/B102-Pillow.jpg',
                     price: "$99.99",
-                    detailLink: "/products/elegant-floral-bedsheet-king",
+                    detailLink: "/#",
                     position: { top: '90%', left: '79%' },
-                    modalId: "elegant-floral-king-modal"
+                    modalId: "elegant-floral-Pillow-modal"
                 }
             ]
         },
@@ -34,7 +34,7 @@ const SecondSection = () => {
                     image: 'https://i.ibb.co/qFY56J9/B104-Pillow.jpg',
                     price: "$79.90",
                     regularPrice: "$89.90",
-                    detailLink: "/products/vintage-floral-bedsheet-double",
+                    detailLink: "/#",
                     position: { top: '36%', left: '40%' },
                     modalId: "vintage-floral-double-modal"
                 },
@@ -42,7 +42,7 @@ const SecondSection = () => {
                     title: "Vintage Floral Bedsheet - Single Size",
                     image: 'https://i.ibb.co/G2xQ3Sr/B104-Display.jpg',
                     price: "$59.90",
-                    detailLink: "/products/vintage-floral-bedsheet-single",
+                    detailLink: "/#",
                     position: { top: '80%', left: '51%' },
                     modalId: "vintage-floral-single-modal"
                 }
@@ -53,21 +53,21 @@ const SecondSection = () => {
             backgroundImage: 'https://i.ibb.co/X7tDVhG/B103-Flat-Pattern.jpg',
             items: [
                 {
-                    title: "Luxury Silk Bedsheet - Queen Size",
+                    title: "Luxury Silk Bedsheet",
                     image: 'https://i.ibb.co/MMMWk06/B103-Closeup.jpg',
                     price: "$149.00",
                     regularPrice: "$179.00",
-                    detailLink: "/products/luxury-silk-bedsheet-queen",
+                    detailLink: "/#",
                     position: { top: '39%', left: '39%' },
-                    modalId: "luxury-silk-queen-modal"
+                    modalId: "luxury-silk-bedsheet-modal"
                 },
                 {
-                    title: "Luxury Silk Bedsheet - King Size",
+                    title: "Luxury Silk Bedsheet",
                     image: 'https://i.ibb.co/0CbcpR1/B103-Pillow.jpg',
                     price: "$169.00",
-                    detailLink: "/products/luxury-silk-bedsheet-king",
+                    detailLink: "/#",
                     position: { top: '56%', left: '61%' },
-                    modalId: "luxury-silk-king-modal"
+                    modalId: "luxury-silk-pillow-modal"
                 }
             ]
         },
@@ -123,38 +123,6 @@ const SecondSection = () => {
                                                     <div className="lookbook-product__bottom">
                                                         <a className="lookbook-product__detail" href={item.detailLink}>View detail</a>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="modal fade" id={item.modalId} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div className="modal-dialog">
-                                            <div className="modal-content">
-                                                <div className="modal-header">
-                                                    <h5 className="modal-title" id="exampleModalLabel">{item.title}</h5>
-                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div className="modal-body">
-                                                    <div className="lookbook-product">
-                                                        <a className="lookbook-product__img img-fluid" href={item.detailLink}>
-                                                            <img className="img-fluid" src={item.image} alt={item.title} />
-                                                        </a>
-                                                        <div className="lookbook-product__content">
-                                                            <a className="lookbook-product__title" href={item.detailLink}>{item.title}</a>
-                                                            <div className="lookbook-product__price">
-                                                                <div className="product-price"><span className="money">{item.price}</span></div>
-                                                                {item.regularPrice && (
-                                                                    <div className="product-price product-price--regular ms-1"><span className="money">{item.regularPrice}</span></div>
-                                                                )}
-                                                            </div>
-                                                            <div className="lookbook-product__bottom">
-                                                                <a className="lookbook-product__detail" href={item.detailLink}>View detail</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="modal-footer">
-                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>

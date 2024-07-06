@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const ThirdSection = () => {
     return (
@@ -16,9 +17,9 @@ const ThirdSection = () => {
                             FOR YOUR COMFORT
                         </div>
                         <div className="background-parallax__text--2 h3 lh-1">
-                            <a href="#">
+                            <NavLink to="/My-lettolino/shop">
                                 View Collection
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

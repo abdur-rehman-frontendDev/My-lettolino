@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const blogPosts = [
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         title: "Choosing the Perfect Colors for Your Bedroom",
         date: "July 3, 2024",
@@ -12,7 +13,7 @@ const blogPosts = [
         category: "Home Decor"
     },
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/photo-1445991842772-097fea258e7b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
         title: "Caring for Your Handmade Bedsheets: Tips and Tricks",
         date: "June 28, 2024",
@@ -20,7 +21,7 @@ const blogPosts = [
         category: "Bedding Tips"
     },
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
         title: "How Handmade Bedsheets Are Made: A Step-by-Step Guide",
         date: "May 15, 2024",
@@ -28,7 +29,7 @@ const blogPosts = [
         category: "Craftsmanship"
     },
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/photo-1554861148-982401c111fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8",
         title: "Creating a Cozy Bedroom with Handmade Bedsheets",
         date: "April 5, 2024",
@@ -36,7 +37,7 @@ const blogPosts = [
         category: "Home Inspiration"
     },
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
         title: "Why Choose Handmade Bedsheets Over Mass-Produced Ones",
         date: "March 20, 2024",
@@ -44,7 +45,7 @@ const blogPosts = [
         category: "Handmade Benefits"
     },
     {
-        href: "#",
+        href: "/My-lettolino/blog-detail",
         image: "https://images.unsplash.com/photo-1506720186575-11354d325017?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8",
         title: "How to Style Your Bedroom with Handmade Bedsheets",
         date: "February 10, 2024",
@@ -55,7 +56,7 @@ const blogPosts = [
 
 const BlogPost = ({ href, image, title, date, author, category }) => (
     <div className="slick-carousel__item slick-slide slick-cloned">
-        <a className="article__featured-image-link d-block" href={href}>
+        <NavLink className="article__featured-image-link d-block" to={href}>
             <div
                 className="card__image position-relative js lazyloaded"
                 style={{
@@ -63,7 +64,7 @@ const BlogPost = ({ href, image, title, date, author, category }) => (
                     backgroundImage: `url("${image}")`
                 }}
             />
-        </a>
+        </NavLink>
         <div className="article__content text-center pt-3 mt-2">
             <div className="article__content-wrap">
                 <div className="article__meta d-flex flex-wrap justify-content-center align-items-center text-uppercase">
@@ -79,9 +80,9 @@ const BlogPost = ({ href, image, title, date, author, category }) => (
                     <span className="article__meta-blog">in {category}</span>
                 </div>
                 <h4 className="article__title position-relative mb-3 cus-ellipsis">
-                    <a className="link" href={href} title={title}>
+                    <NavLink className="link" to={href} title={title}>
                         {title}
-                    </a>
+                    </NavLink>
                 </h4>
             </div>
         </div>

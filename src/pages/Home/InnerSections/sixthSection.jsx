@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const SixthSection = () => {
 
@@ -21,9 +22,9 @@ const SixthSection = () => {
                                         Discover a rotating selection of our finest creations, each meticulously
                                         crafted to elevate your sleep experience.
                                     </div>
-                                    <a className="btn image-with-text__btn--3" href="#">
+                                    <NavLink className="btn image-with-text__btn--3" to="#">
                                         VIEW PROMOTIONS
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div><div className=" col-12 col-md-6 col-xl-6">
                                 <div className="image-with-text__image position-relative">

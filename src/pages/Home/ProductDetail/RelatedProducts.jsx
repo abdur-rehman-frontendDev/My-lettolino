@@ -73,7 +73,7 @@ const productData = [
 
 ];
 
-const FourthSection = () => {
+const RelatedProducts = () => {
     const navigate = useNavigate();
 
     return (
@@ -206,4 +206,4 @@ const FourthSection = () => {
     );
 };
 
-export default FourthSection;
+export default RelatedProducts;

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import DiscountAlert from './components/DiscountAlert';
 import Navbar from './components/Navbar';
 import HomePage from './pages/Home';
@@ -7,7 +7,20 @@ import ShopPage from './pages/Shop';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import Footer from './components/Footer';
+import ProductDetail from './pages/Home/ProductDetail';
+
 import './App.css';
+import BlogDetail from './pages/Home/Blogs';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   return (
@@ -17,10 +30,13 @@ const App = () => {
           {/* <DiscountAlert /> */}
           <Navbar />
         </div>
+        <ScrollToTop />
         <Routes>
           <Route path="/My-lettolino" element={<Navigate to="/My-lettolino/home" />} />
           <Route path="/My-lettolino/" element={<Navigate to="/My-lettolino/home" />} />
           <Route path="/My-lettolino/home" element={<HomePage />} />
+          <Route path="/My-lettolino/product/:slug" element={<ProductDetail />} />
+          <Route path="/My-lettolino/blog-detail" element={<BlogDetail />} />
           <Route path="/My-lettolino/shop" element={<ShopPage />} />
           <Route path="/My-lettolino/about" element={<AboutPage />} />
           <Route path="/My-lettolino/contact" element={<ContactPage />} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const FirstSection = () => {
     return (
@@ -24,7 +25,7 @@ const FirstSection = () => {
                         <div className="slideshow-caption__inner text-start align-bottom">
                             <div className="slideshow-caption__content text-start">
                                 <div className="slideshow-caption__heading--small h3"
-                                    style={{ color: '#fafafa', fontSize: '58px',fontWeight:'bold' }}>
+                                    style={{ color: '#fafafa', fontSize: '58px', fontWeight: 'bold' }}>
                                     Hand-Printed Bedsheets Collection
                                 </div>
                                 <div className="slideshow-caption__desc mb-0 text bottomtop-4"
@@ -33,7 +34,7 @@ const FirstSection = () => {
                                     for a <br /> touch of artistry and elegance.
                                 </div>
                                 <div>
-                                    <a className="btn slideshow-caption__btn bottomtop-5" href="#"
+                                    <NavLink className="btn slideshow-caption__btn bottomtop-5" to="/My-lettolino/shop"
                                         style={{
                                             borderRadius: '30px', borderColor: '#4e4e4e',
                                             backgroundColor: '#4e4e4e', color: '#ffffff',
@@ -41,7 +42,7 @@ const FirstSection = () => {
                                         }}
                                     >
                                         Explore
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

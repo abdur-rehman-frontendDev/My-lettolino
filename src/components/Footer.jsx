@@ -1,5 +1,6 @@
 import React from 'react';
 import CopyrightFooter from './Copyright';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -21,16 +22,16 @@ const Footer = () => {
                                             <div className="footer-link-list-content accordion-footer__content">
                                                 <ul className="footer-links list-unstyled mb-0">
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/pages/about-us" title='About us'>About us</a>
+                                                        <NavLink to="/pages/about-us" title='About us'>About us</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/pages/contact-us" title='Contact'>Contact</a>
+                                                        <NavLink to="/pages/contact-us" title='Contact'>Contact</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/collections/all" title='Official Store'>Official Store</a>
+                                                        <NavLink to="/collections/all" title='Official Store'>Official Store</NavLink>
                                                     </li>
                                                     <li className="py-1">
-                                                        <a href="/pages/contact-us" title='Join us'>Join us</a>
+                                                        <NavLink to="/pages/contact-us" title='Join us'>Join us</NavLink>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -47,16 +48,16 @@ const Footer = () => {
                                             <div className="footer-link-list-content accordion-footer__content">
                                                 <ul className="footer-links list-unstyled mb-0">
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/policies/shipping-policy" title='Shipping & Return'>Shipping &amp; Return</a>
+                                                        <NavLink to="/policies/shipping-policy" title='Shipping & Return'>Shipping &amp; Return</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/policies/privacy-policy" title='Privacy Policy'>Privacy Policy</a>
+                                                        <NavLink to="/policies/privacy-policy" title='Privacy Policy'>Privacy Policy</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/policies/terms-of-service" title='Terms & Conditions'>Terms &amp; Conditions</a>
+                                                        <NavLink to="/policies/terms-of-service" title='Terms & Conditions'>Terms &amp; Conditions</NavLink>
                                                     </li>
                                                     <li className="py-1">
-                                                        <a href="/pages/faqs" title='F.A.Qs'>F.A.Qs</a>
+                                                        <NavLink to="/pages/faqs" title='F.A.Qs'>F.A.Qs</NavLink>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -73,16 +74,16 @@ const Footer = () => {
                                             <div className="footer-link-list-content accordion-footer__content">
                                                 <ul className="footer-links list-unstyled mb-0">
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/account/login" title='Login'>Login</a>
+                                                        <NavLink to="/account/login" title='Login'>Login</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/account/register" title='Register'>Register</a>
+                                                        <NavLink to="/account/register" title='Register'>Register</NavLink>
                                                     </li>
                                                     <li className="py-1 mb-md-2">
-                                                        <a href="/account" title='Order History'>Order History</a>
+                                                        <NavLink to="/account" title='Order History'>Order History</NavLink>
                                                     </li>
                                                     <li className="py-1">
-                                                        <a href="/checkout" title='Check out'>Check out</a>
+                                                        <NavLink to="/checkout" title='Check out'>Check out</NavLink>
                                                     </li>
                                                 </ul>
                                             </div>

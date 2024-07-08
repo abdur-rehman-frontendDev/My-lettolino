@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DiscountAlert from './components/DiscountAlert';
 import Navbar from './components/Navbar';
 import HomePage from './pages/Home';
@@ -8,7 +9,8 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import Footer from './components/Footer';
 import ProductDetail from './pages/Home/ProductDetail';
-
+import ViewCart from './pages/Cart/ViewCart';
+import CheckoutCart from './pages/Cart/CheckoutCart';
 import './App.css';
 import BlogDetail from './pages/Home/Blogs';
 
@@ -40,6 +42,8 @@ const App = () => {
           <Route path="/My-lettolino/shop" element={<ShopPage />} />
           <Route path="/My-lettolino/about" element={<AboutPage />} />
           <Route path="/My-lettolino/contact" element={<ContactPage />} />
+          <Route path="/My-lettolino/cart" element={<ViewCart />} />
+          <Route path="/My-lettolino/checkout" element={<CheckoutCart />} />
           <Route path="*" element={<Navigate to="/My-lettolino/home" />} />
         </Routes>
         <Footer />

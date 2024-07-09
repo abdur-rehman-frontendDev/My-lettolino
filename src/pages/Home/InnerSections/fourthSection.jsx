@@ -5,88 +5,135 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { RemoveOutline } from 'react-ionicons';
 import { AddOutline } from 'react-ionicons';
 import Modal from 'react-bootstrap/Modal';
+import { useCart } from '../../../context/CartContext';
 
-const productData = [
-    {
-        id: 1,
-        name: 'Geometric Design Bedsheet',
-        price: '$39.99',
-        imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
-        url: 'geometric-design-bedsheet',
-    },
-    {
-        id: 2,
-        name: 'Paisley Pattern Bedsheet',
-        price: '$34.99',
-        imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
-        url: 'paisley-pattern-bedsheet',
-    },
-    {
-        id: 3,
-        name: 'Classic White Bedsheet',
-        price: '$25.99',
-        imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
-        url: 'classic-white-bedsheet',
-    },
-    {
-        id: 4,
-        name: 'Vintage Striped Bedsheet',
-        price: '$37.99',
-        imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
-        url: 'vintage-striped-bedsheet',
-    },
-    {
-        id: 5,
-        name: 'Classic White Bedsheet',
-        price: '$25.99',
-        imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
-        url: 'classic-white-bedsheet',
-    },
-    {
-        id: 6,
-        name: 'Vintage Striped Bedsheet',
-        price: '$37.99',
-        imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
-        url: 'vintage-striped-bedsheet',
-        discount: -20
-    },
-    {
-        id: 7,
-        name: 'Geometric Design Bedsheet',
-        price: '$39.99',
-        imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
-        url: 'geometric-design-bedsheet',
-    },
-    {
-        id: 8,
-        name: 'Paisley Pattern Bedsheet',
-        price: '$34.99',
-        imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
-        imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
-        url: 'paisley-pattern-bedsheet',
-        discount: -50
-    },
-
-];
 
 
 const FourthSection = () => {
     const navigate = useNavigate();
+    const { addToCart } = useCart();
+
+    const productData = [
+        {
+            id: 1,
+            name: 'Geometric Design Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
+            price: 39.99,
+            quantity: 1,
+            total: 39.99,
+            url: 'geometric-design-bedsheet',
+        },
+        {
+            id: 2,
+            name: 'Paisley Pattern Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
+            price: 34.99,
+            quantity: 1,
+            total: 34.99,
+            url: 'paisley-pattern-bedsheet',
+        },
+        {
+            id: 3,
+            name: 'Classic White Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
+            price: 25.99,
+            quantity: 1,
+            total: 25.99,
+            url: 'classic-white-bedsheet',
+        },
+        {
+            id: 4,
+            name: 'Vintage Striped Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
+            price: 37.99,
+            quantity: 1,
+            total: 37.99,
+            url: 'vintage-striped-bedsheet',
+        },
+        {
+            id: 5,
+            name: 'Classic White Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
+            price: 25.99,
+            quantity: 1,
+            total: 25.99,
+            url: 'classic-white-bedsheet',
+        },
+        {
+            id: 6,
+            name: 'Vintage Striped Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
+            price: 37.99,
+            quantity: 1,
+            total: 37.99,
+            url: 'vintage-striped-bedsheet',
+            discount: -20
+        },
+        {
+            id: 7,
+            name: 'Geometric Design Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
+            price: 39.99,
+            quantity: 1,
+            total: 39.99,
+            url: 'geometric-design-bedsheet',
+        },
+        {
+            id: 8,
+            name: 'Paisley Pattern Bedsheet',
+            vendor: 'Love & Bravery',
+            imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+            imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
+            price: 34.99,
+            quantity: 1,
+            total: 34.99,
+            url: 'paisley-pattern-bedsheet',
+            discount: -50
+        },
+
+    ];
 
     const [modalShow, setModalShow] = useState(false);
     const [quantity, setQuantity] = useState(1);
     const [currentProduct, setCurrentProduct] = useState(null);
 
-    const handleQuantityChange = (e) => {
+    const handleQuantityChange = (e, index) => {
         const value = Math.max(1, parseInt(e.target.value, 10) || 1);
-        setQuantity(value);
+        const updatedItems = cartItems.map((item, idx) => 
+            idx === index ? { ...item, quantity: value, total: value * item.price } : item
+        );
+        setCartItems(updatedItems);
+        addToCart(updatedItems[index]);
+    };
+
+    const increaseQuantity = (index) => {
+        const updatedItems = cartItems.map((item, idx) => 
+            idx === index ? { ...item, quantity: item.quantity + 1, total: (item.quantity + 1) * item.price } : item
+        );
+        setCartItems(updatedItems);
+        addToCart(updatedItems[index]);
+    };
+
+    const decreaseQuantity = (index) => {
+        const updatedItems = cartItems.map((item, idx) => 
+            idx === index ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1, total: (item.quantity > 1 ? item.quantity - 1 : 1) * item.price } : item
+        );
+        setCartItems(updatedItems);
+        addToCart(updatedItems[index]);
     };
 
     const handleCartQuickView = (product) => {
@@ -94,21 +141,21 @@ const FourthSection = () => {
         setCurrentProduct(product);
     };
 
+    const handleAddToCart = (product) => {
+        addToCart(product);
+    };
+
     return (
 
         <>
             <div className="shopify-section velaFramework">
-                <section className="vela-section overflow-hidden"
-                    style={{ padding: '90px 0 50px', margin: '0 0 30px' }}>
+                <section className="vela-section overflow-hidden" style={{ padding: '90px 0 50px', margin: '0 0 30px' }}>
                     <div className="container">
                         <div className="vela-section__inner">
                             <div className="heading-group">
-                                <h3 className="heading">
-                                    <span>New Arrivals</span>
-                                </h3>
+                                <h3 className="heading"><span>New Arrivals</span></h3>
                                 <div className="sub-heading">
-                                    Explore our artisanal handmade bedsheets, each piece crafted with
-                                    care to elevate your comfort and style.
+                                    Explore our artisanal handmade bedsheets, each piece crafted with care to elevate your comfort and style.
                                 </div>
                             </div>
                             <div className="vela-section__content">
@@ -126,38 +173,20 @@ const FourthSection = () => {
                                     rewind={true}
                                     loop={true}
                                     breakpoints={{
-                                        320: {
-                                            slidesPerView: 1,
-                                            slidesPerGroup: 1,
-                                        },
-                                        768: {
-                                            slidesPerView: 2,
-                                            slidesPerGroup: 2,
-                                        },
-                                        1024: {
-                                            slidesPerView: 3,
-                                            slidesPerGroup: 3,
-                                        },
-                                        1199: {
-                                            slidesPerView: 4,
-                                            slidesPerGroup: 4,
-                                        },
+                                        320: { slidesPerView: 1, slidesPerGroup: 1 },
+                                        768: { slidesPerView: 2, slidesPerGroup: 2 },
+                                        1024: { slidesPerView: 3, slidesPerGroup: 3 },
+                                        1199: { slidesPerView: 4, slidesPerGroup: 4 },
                                     }}
                                 >
                                     {productData.map((product, index) => (
                                         <SwiperSlide key={index}>
                                             <div className="product-card product-grid">
                                                 <div className="product-card__image-wrapper">
-                                                    <NavLink className="product-card__image-link"
-                                                        to={`/My-lettolino/product/${product.url}`}>
+                                                    <NavLink className="product-card__image-link" to={`/My-lettolino/product/${product.url}`}>
                                                         <span className="img-primary">
                                                             <div className="card_wrap">
-                                                                <div className="card__image position-relative js lazyloaded"
-                                                                    style={{
-                                                                        paddingTop: '136.58%',
-                                                                        backgroundImage: `url(${product.imgPrimary})`
-                                                                    }}
-                                                                >
+                                                                <div className="card__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgPrimary})` }}>
                                                                     {product.discount && (
                                                                         <div className="product-card__label">
                                                                             <span className="label-on-sale">
@@ -170,30 +199,25 @@ const FourthSection = () => {
                                                         </span>
                                                         <span className="img-secondary position-absolute">
                                                             <div className="card_wrap">
-                                                                <div className="card__image position-relative js lazyloaded"
-                                                                    style={{
-                                                                        paddingTop: '136.58%',
-                                                                        backgroundImage: `url(${product.imgSecondary})`
-                                                                    }}
-                                                                >
-                                                                </div>
+                                                                <div className="card__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgSecondary})` }}></div>
                                                             </div>
                                                         </span>
                                                     </NavLink>
                                                     <div className="product-card__buttons position-absolute d-flex w-100 align-items-center start-0 end-0">
                                                         <div className="product-card__form w-100 mx-1">
-                                                            <button className="js-btn-addtocart btn btn--add-to-cart btn-default"
-                                                                onClick={() => { navigate(`/My-lettolino/product/${product.url}`) }}
-                                                                type="submit" value="Submit" title="Add to Cart" >
+                                                            <button
+                                                                className="js-btn-addtocart btn btn--add-to-cart btn-default"
+                                                                onClick={() => handleAddToCart(product)}
+                                                                type="submit" value="Submit" title="Add to Cart"
+                                                            >
                                                                 <span>Add to Cart</span>
                                                             </button>
                                                         </div>
-                                                        <NavLink className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default"
+                                                        <NavLink
+                                                            className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default"
                                                             title="Quickview" onClick={() => { handleCartQuickView(product) }}
                                                         >
-                                                            <svg width={18} height={18} xmlns="http://www.w3.org/2000/svg"
-                                                                xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-                                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 1056 896">
+                                                            <svg width={18} height={18} xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1056 896">
                                                                 <path fill="currentColor" d="M531 257q-39 0-74.5 15.5t-61 41t-41 61T339 449t15.5 75t41 61.5t61 40.5t74.5 15q53 0 97-25.5t69.5-69.5t25.5-97q0-79-56-135.5T531 257zm0 320q-34 0-64-17.5t-47.5-47T402 448q0-26 10-49.5t27.5-41t41-27.5t49.5-10q53 0 90.5 37.5T658 448t-37 91t-90 38zm509-136q0-1-.5-2.5t-.5-2.5t-.5-1.5l-.5-.5v-1l-1-2q-68-157-206-246.5T530 95q-107 0-206 39T144.5 249.5T18 431v2.5l-1 1.5v3l-1 2q-1 6-1 9q0 2 .5 4t.5 4q0 1 1 3v2l.5 1.5l.5.5v3q69 157 207.5 245.5T528 801q107 0 205.5-38.5T912 648t125-181q1 0 1-1v-1.5l.5-1l.5-.5v-3l1-2q1-6 1-9q0-2-.5-4t-.5-4zM528 737q-142 0-263-74.5T81 449q63-139 185-214.5T530 159q92 0 176.5 32T862 289.5T975 449q-63 139-184 213.5T528 737z" />
                                                             </svg>
                                                         </NavLink>
@@ -297,7 +321,7 @@ const FourthSection = () => {
                                             <button
                                                 className="js-qty-adjust vela-qty__adjust vela-qty__adjust--minus"
                                                 type="button"
-                                                onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
+                                                onClick={() => decreaseQuantity(index)}
                                                 aria-label="Decrease item quantity by one"
                                             >
                                                 <RemoveOutline color={'#00000'} />
@@ -309,13 +333,13 @@ const FourthSection = () => {
                                                 name="quantity"
                                                 pattern="[0-9]*"
                                                 type="text"
-                                                onChange={handleQuantityChange}
+                                                onChange={(e) => handleQuantityChange(e, index)} 
                                                 aria-label="Product quantity"
                                             />
                                             <button
                                                 className="js-qty-adjust vela-qty__adjust vela-qty__adjust--plus"
                                                 type="button"
-                                                onClick={() => setQuantity(quantity + 1)}
+                                                onClick={() => increaseQuantity(index)}
                                                 aria-label="Increase item quantity by one"
                                             >
                                                 <AddOutline color={'#00000'} />
@@ -325,7 +349,8 @@ const FourthSection = () => {
                                 </div>
                             </div>
                             <div class="product-single__add-to-cart">
-                                <button class="btn btn--add-to-cart btn-default px-5 py-3" type="submit" name="add">
+                                <button class="btn btn--add-to-cart btn-default px-5 py-3" 
+                                onClick={() => handleAddToCart(currentProduct)} name="add">
                                     <span class="btn__text">Add to Cart</span>
                                 </button>
                             </div>

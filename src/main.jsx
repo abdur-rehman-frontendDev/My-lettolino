@@ -1,6 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
 import App from './App';
 
 // Import Swiper styles
@@ -14,8 +17,11 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <CartProvider>
+      <ToastContainer />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CartProvider>
   </React.StrictMode>
 );

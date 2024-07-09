@@ -20,6 +20,7 @@
     "react-ionicons": "^4.2.1",
     "react-rater": "^6.0.5",
     "react-router-dom": "^6.24.0",
+    "react-toastify": "^10.0.5",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

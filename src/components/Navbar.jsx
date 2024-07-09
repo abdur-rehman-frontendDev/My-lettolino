@@ -3,41 +3,12 @@ import { NavLink } from 'react-router-dom';
 import LettoLinoGray from '../assets/LettoLino-Gray.png';
 import LettoLinoGolden from '../assets/LettoLino-Golden.png';
 import CartInfo from '../pages/Cart/CartInfo';
+import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
 
-    const cartItems = [
-        {
-            id: 1,
-            name: "Maude Flutter Sleeve",
-            price: "$144.00",
-            image: "https://cdn.shopify.com/s/files/1/2721/4382/products/product_image110_small.jpg?v=1517830375",
-            link: "/products/maude-flutter-sleeve?variant=10064236478506"
-        },
-        {
-            id: 2,
-            name: "Ruched Mini Dress",
-            price: "$34.99",
-            image: "https://cdn.shopify.com/s/files/1/2721/4382/products/product_image87_small.jpg?v=1516509761",
-            link: "/products/ruched-mini-dress?variant=10040286117930"
-        },
-        {
-            id: 3,
-            name: "Rocket Crop Lazuli",
-            price: "$218.00",
-            image: "https://cdn.shopify.com/s/files/1/2721/4382/products/product_image46_small.jpg?v=1516504730",
-            link: "/products/rocket-crop-lazuli?variant=10064236478506"
-        },
-        {
-            id: 4,
-            name: "Ruched Mini Dress",
-            price: "$34.99",
-            image: "https://cdn.shopify.com/s/files/1/2721/4382/products/product_image87_small.jpg?v=1516509761",
-            link: "/products/ruched-mini-dress?variant=10040286117930"
-        }
-    ];
-
-    const subtotal = cartItems.reduce((total, item) => total + parseFloat(item.price.slice(1)), 0).toFixed(2);
+    const { cart } = useCart();
+    const cartItemCount = cart.length;
 
     return (
         <div className="shopify-section" id="shopify-section-header">
@@ -104,10 +75,10 @@ const Navbar = () => {
                                             </svg>
                                             <span className="header-cart__span d-none">Cart</span>
                                             <span className="header-cart__count cart-count-bubble" data-cart-count="">
-                                                {cartItems.length}
+                                                {cartItemCount}
                                             </span>
                                         </NavLink>
-                                        <CartInfo cartItems={cartItems} subtotal={subtotal} />
+                                        <CartInfo />
                                         <p />
                                     </div>
                                 </div>

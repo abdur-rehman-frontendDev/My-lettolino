@@ -48,7 +48,7 @@ const ViewCart = () => {
             <div className="container d-flex flex-wrap py-5 position-relative main-cart-wrap">
                 <div className="col-12 col-lg-8 pe-0 pe-lg-4">
                     <h1 className="mb-4 page-title">
-                        Your cart
+                        Your Shoping Cart
                     </h1>
                     <div className="cart__items">
                         <div className="js-contents">
@@ -189,7 +189,7 @@ const ViewCart = () => {
                                             </span>
                                         </p>
                                     </div>
-                                    <div className="tax-note text-end mb-3">
+                                    <div className="tax-note mb-3">
                                         Taxes and{' '}
                                         <a href="/policies/shipping-policy">
                                             shipping

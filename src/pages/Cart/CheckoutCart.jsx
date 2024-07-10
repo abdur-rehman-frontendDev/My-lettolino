@@ -1,29 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const products = [
-    {
-        id: 1,
-        name: "Maude Flutter Sleeve",
-        vendor: "Love & Bravery",
-        image: "//cdn.shopify.com/s/files/1/2721/4382/products/product_image110_150x.jpg?v=1517830375",
-        price: 48.00,
-        quantity: 3,
-    },
-    {
-        id: 1,
-        name: "Maude Flutter Sleeve",
-        vendor: "Love & Bravery",
-        image: "//cdn.shopify.com/s/files/1/2721/4382/products/product_image110_150x.jpg?v=1517830375",
-        price: 26.99,
-        quantity: 1,
-    },
-];
+import { useCart } from '../../context/CartContext';
 
 const CheckoutCart = () => {
     const navigate = useNavigate();
 
-    const subtotal = products.reduce((acc, product) => acc + (product.price * product.quantity), 0);
+    const { cart } = useCart();
+
+    const subtotal = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
     const shippingCost = 10.00;
     const shippingTaxe = 5.00;
     const total = subtotal + shippingCost + shippingTaxe;
@@ -54,12 +38,12 @@ const CheckoutCart = () => {
                     </div>
                 </div>
                 <div className="cart-items--body pt-3 px-1">
-                    {products.map((product) => (
+                    {cart.map((product) => (
                         <div className="row justify-content-between mb-3" key={product.id}>
                             <div className="col-auto col-sm-7">
                                 <div className="media d-flex flex-column flex-sm-row align-items-center">
                                     <img className="checkout-img-fluid" width="60px"
-                                        src={product.image} alt={product.name} />
+                                        src={product.imgPrimary} alt={product.name} />
                                     <p className="boxed m-4 h5">{product.name}</p>
                                 </div>
                             </div>
@@ -67,7 +51,7 @@ const CheckoutCart = () => {
                                 <p className="boxed h5">{product.quantity}</p>
                             </div>
                             <div className="col-auto col-sm-3 my-auto h5 text-end">
-                                <p><b>${product.price.toFixed(2)}</b></p>
+                                <p><b>${product.total.toFixed(2)}</b></p>
                             </div>
                         </div>
                     ))}

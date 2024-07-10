@@ -111,29 +111,9 @@ const FourthSection = () => {
     const [quantity, setQuantity] = useState(1);
     const [currentProduct, setCurrentProduct] = useState(null);
 
-    const handleQuantityChange = (e, index) => {
+    const handleQuantityChange = (e) => {
         const value = Math.max(1, parseInt(e.target.value, 10) || 1);
-        const updatedItems = cartItems.map((item, idx) => 
-            idx === index ? { ...item, quantity: value, total: value * item.price } : item
-        );
-        setCartItems(updatedItems);
-        addToCart(updatedItems[index]);
-    };
-
-    const increaseQuantity = (index) => {
-        const updatedItems = cartItems.map((item, idx) => 
-            idx === index ? { ...item, quantity: item.quantity + 1, total: (item.quantity + 1) * item.price } : item
-        );
-        setCartItems(updatedItems);
-        addToCart(updatedItems[index]);
-    };
-
-    const decreaseQuantity = (index) => {
-        const updatedItems = cartItems.map((item, idx) => 
-            idx === index ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1, total: (item.quantity > 1 ? item.quantity - 1 : 1) * item.price } : item
-        );
-        setCartItems(updatedItems);
-        addToCart(updatedItems[index]);
+        setQuantity(value);
     };
 
     const handleCartQuickView = (product) => {
@@ -230,7 +210,7 @@ const FourthSection = () => {
                                                         </div>
                                                         <div className="product-group-price d-flex align-items-center justify-content-center">
                                                             <div className="product-price ">
-                                                                <span className="money">{product.price}</span>
+                                                                <span className="money">${product.price}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -313,7 +293,7 @@ const FourthSection = () => {
                                 floral embroidery, this bedsheet adds a touch of sophistication
                                 to any bedroom.
                             </div>
-                            <div class="product-quickview__buttons mb-3">
+                            {/* <div class="product-quickview__buttons mb-3">
                                 <div class="product-quantity">
                                     <label class="product-quantity__label pb-2">Quantity</label>
                                     <div class="product-quantity__selector">
@@ -321,7 +301,7 @@ const FourthSection = () => {
                                             <button
                                                 className="js-qty-adjust vela-qty__adjust vela-qty__adjust--minus"
                                                 type="button"
-                                                onClick={() => decreaseQuantity(index)}
+                                                onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
                                                 aria-label="Decrease item quantity by one"
                                             >
                                                 <RemoveOutline color={'#00000'} />
@@ -333,13 +313,13 @@ const FourthSection = () => {
                                                 name="quantity"
                                                 pattern="[0-9]*"
                                                 type="text"
-                                                onChange={(e) => handleQuantityChange(e, index)} 
+                                                onChange={handleQuantityChange}
                                                 aria-label="Product quantity"
                                             />
                                             <button
                                                 className="js-qty-adjust vela-qty__adjust vela-qty__adjust--plus"
                                                 type="button"
-                                                onClick={() => increaseQuantity(index)}
+                                                onClick={() => setQuantity(quantity + 1)}
                                                 aria-label="Increase item quantity by one"
                                             >
                                                 <AddOutline color={'#00000'} />
@@ -347,13 +327,13 @@ const FourthSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product-single__add-to-cart">
-                                <button class="btn btn--add-to-cart btn-default px-5 py-3" 
-                                onClick={() => handleAddToCart(currentProduct)} name="add">
+                            </div> */}
+                            {/* <div class="product-single__add-to-cart">
+                                <button class="btn btn--add-to-cart btn-default px-5 py-3"
+                                    onClick={() => handleAddToCart(currentProduct)} type="submit" name="add">
                                     <span class="btn__text">Add to Cart</span>
                                 </button>
-                            </div>
+                            </div> */}
                             <div class="quickview__tex mt-5">
                                 <div class="d-flex">
                                     <span class="me-2">

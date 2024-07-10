@@ -9,7 +9,7 @@ import { useCart } from '../../../context/CartContext';
 
 
 
-const FourthSection = () => {
+const FourthSection = ({ title, description }) => {
     const navigate = useNavigate();
     const { addToCart } = useCart();
 
@@ -129,13 +129,17 @@ const FourthSection = () => {
 
         <>
             <div className="shopify-section velaFramework">
-                <section className="vela-section overflow-hidden" style={{ padding: '90px 0 50px', margin: '0 0 30px' }}>
+                <section className="vela-section overflow-hidden"
+                    style={{
+                        padding: title === 'New Arrivals' ? '40px 0 50px' : '0 0 50px',
+                        margin: '0 0 30px'
+                    }}>
                     <div className="container">
                         <div className="vela-section__inner">
                             <div className="heading-group">
-                                <h3 className="heading"><span>New Arrivals</span></h3>
+                                <h3 className="heading"><span>{title}</span></h3>
                                 <div className="sub-heading">
-                                    Explore our artisanal handmade bedsheets, each piece crafted with care to elevate your comfort and style.
+                                    {description}
                                 </div>
                             </div>
                             <div className="vela-section__content">

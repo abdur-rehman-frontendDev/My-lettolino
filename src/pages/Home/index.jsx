@@ -9,6 +9,8 @@ import SeventhSection from './InnerSections/seventhSection';
 
 const HomePage = () => {
 
+  const title = 'New Arrivals';
+  const description = 'Explore our artisanal handmade bedsheets, each piece crafted with care to elevate your comfort and style.'
 
   return (
     <>
@@ -22,7 +24,7 @@ const HomePage = () => {
       <ThirdSection />
 
       {/* Fourth Section */}
-      <FourthSection />
+      <FourthSection title={title} description={description} />
 
       {/* Fifth Section */}
       {/* <FifthSection /> */}

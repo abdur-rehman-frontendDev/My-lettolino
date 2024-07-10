@@ -3,6 +3,7 @@ import DetailHeader from './DetailHeader';
 import RelatedProducts from './RelatedProducts';
 import DetailInform from './DetailInform';
 import DetailDescription from './DetailDescription';
+import FourthSection from '../InnerSections/fourthSection';
 
 const ProductDetail = () => {
     const productDetails = {
@@ -82,6 +83,7 @@ const ProductDetail = () => {
         },
     ];
 
+    const title = 'Related Products';
 
     return (
         <>
@@ -91,7 +93,8 @@ const ProductDetail = () => {
                     {/* <DetailHeader /> */}
                     <DetailDescription productDetails={productDetails} />
                     <DetailInform productDeInfo={productDeInfo} />
-                    <RelatedProducts />
+                    <FourthSection title={title}/>
+                    {/* <RelatedProducts /> */}
                 </div>
             </main >
         </>

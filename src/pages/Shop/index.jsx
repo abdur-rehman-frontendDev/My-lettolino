@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useCart } from '../../context/CartContext';
+import DetailHeader from '../Home/ProductDetail/DetailHeader';
 
 const ShopPage = () => {
 
@@ -76,7 +77,8 @@ const ShopPage = () => {
             quantity: 1,
             total: 37.99,
             url: 'vintage-striped-bedsheet',
-            discount: -20
+            discount: -20,
+            newPrice: 25.99
         },
         {
             id: 7,
@@ -99,7 +101,8 @@ const ShopPage = () => {
             quantity: 1,
             total: 34.99,
             url: 'paisley-pattern-bedsheet',
-            discount: -50
+            discount: -50,
+            newPrice: 22.99
         },
     ];
 
@@ -133,7 +136,8 @@ const ShopPage = () => {
                     quantity: 1,
                     total: 37.99,
                     url: 'vintage-striped-bedsheet',
-                    discount: -20
+                    discount: -20,
+                    newPrice: 25.99
                 },
                 {
                     id: 11,
@@ -156,7 +160,8 @@ const ShopPage = () => {
                     quantity: 1,
                     total: 34.99,
                     url: 'paisley-pattern-bedsheet',
-                    discount: -50
+                    discount: -50,
+                    newPrice: 22.99
                 },
                 {
                     id: 13,
@@ -225,8 +230,9 @@ const ShopPage = () => {
     return (
 
         <>
+            <DetailHeader />
             <div className="shopify-section velaFramework">
-                <section className="vela-section overflow-hidden" style={{ padding: '70px 0 50px', margin: '0 0 30px' }}>
+                <section className="vela-section overflow-hidden" style={{ padding: '0px 0 50px', margin: '0 0 30px' }}>
                     <div className="container">
                         <div className="vela-section__inner">
                             <div className="vela-section__content">
@@ -303,6 +309,13 @@ const ShopPage = () => {
                                                                 <div className="product-price ">
                                                                     <span className="money h6">${product.price}</span>
                                                                 </div>
+                                                                {
+                                                                    product.newPrice && (
+                                                                        <div className="product-price product-price--regular ms-1">
+                                                                            <span class="money h6">${product.newPrice}</span>
+                                                                        </div>
+                                                                    )
+                                                                }
                                                             </div>
                                                         </div>
                                                     </div>

@@ -2362,10 +2362,10 @@ svg.placeholder-svg {
     text-align: center;
     border-radius: 50%;
     display: block;
-    line-height: 19px;
+    line-height: 22px;
     background: var(--primary);
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .cart-hover:hover .header-cart__content,
@@ -4176,14 +4176,14 @@ svg.placeholder-svg {
     color: var(--breadcrumb-heading-color);
     font-family: var(--font-heading-family);
     font-weight: var(--font-heading-weight);
-    font-size: 70px;
+    font-size: 65px;
     line-height: 1;
     text-transform: capitalize;
 }
 
 @media (max-width: 575.98px) {
     .vela-breadcrumbs__title {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -7978,4 +7978,15 @@ a {
     color: white;
     text-align: center;
     margin-top: 1rem;
+}
+
+.vela-breadcrumbs {
+    min-height: 475px;
+    margin: 0 0 60px;
+}
+
+@media screen and (max-width: 767px) {
+    .vela-breadcrumbs {
+        min-height: 150px;
+    }
 }

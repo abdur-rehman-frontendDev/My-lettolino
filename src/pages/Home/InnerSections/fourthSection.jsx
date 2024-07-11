@@ -170,7 +170,7 @@ const FourthSection = ({ title, description }) => {
                                                     <NavLink className="product-card__image-link" to={`/My-lettolino/product/${product.url}`}>
                                                         <span className="img-primary">
                                                             <div className="card_wrap">
-                                                                <div className="card__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgPrimary})` }}>
+                                                                <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgPrimary})` }}>
                                                                     {product.discount && (
                                                                         <div className="product-card__label">
                                                                             <span className="label-on-sale">
@@ -183,7 +183,7 @@ const FourthSection = ({ title, description }) => {
                                                         </span>
                                                         <span className="img-secondary position-absolute">
                                                             <div className="card_wrap">
-                                                                <div className="card__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgSecondary})` }}></div>
+                                                                <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgSecondary})` }}></div>
                                                             </div>
                                                         </span>
                                                     </NavLink>

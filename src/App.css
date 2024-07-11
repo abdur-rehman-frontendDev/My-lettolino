@@ -314,7 +314,7 @@
 }
 
 .footer__title {
-    font-size: calc(var(--font-size-heading) - 11px);
+    font-size: calc(var(--font-size-heading) - 8px);
     font-weight: var(--font-heading-weight);
     font-family: var(--font-heading-family);
     color: var(--footer-heading-color);
@@ -338,7 +338,9 @@
 
 /* footer-newsletter __*/
 .footer-newsletter .section-newsletter__desc {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: var(--footer-link);
 }
 
 .footer-newsletter .form-control {
@@ -434,6 +436,7 @@
 
 /* footer-link-list ___*/
 .footer-links a {
+    font-size: 16px;
     position: relative;
     color: var(--footer-link);
     transition: all .2s ease-in-out;
@@ -1605,6 +1608,12 @@ input[type=number]::-webkit-outer-spin-button {
 /* component-media */
 .card__image {
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cartCard__image {
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -3161,7 +3170,7 @@ svg.placeholder-svg {
 
 .product-grid .product-card__buttons {
     position: absolute !important;
-    bottom: 10px;
+    bottom: 30px;
     z-index: 2;
     visibility: hidden;
     opacity: 0;
@@ -6979,6 +6988,21 @@ svg {
 .cus-swiper .swiper-button-next,
 .cus-swiper .swiper-button-prev {
     top: 30% !important;
+}
+
+.cus-First_swiper .swiper-button-next,
+.cus-First_swiper .swiper-button-prev {
+    top: 50% !important;
+}
+
+.cus-Slider {
+    height: 550px !important;
+}
+
+@media (max-width: 767px) {
+    .cus-Slider {
+        height: 350px !important;
+    }
 }
 
 .cus-ellipsis {

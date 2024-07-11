@@ -25,8 +25,8 @@ const Navbar = () => {
                                                 alt="Letto & Lino"
                                                 className="header__heading-logo img-fluid"
                                                 loading="lazy"
-                                                src={LettoLinoGolden}
-                                                style={{ filter: 'drop-shadow(0px 0px 0px gold)' }}
+                                                src={LettoLinoGray}
+                                                style={{ filter: 'drop-shadow(0px 0px 0px #333a3f)' }}
                                             />
                                         </NavLink>
                                     </div>

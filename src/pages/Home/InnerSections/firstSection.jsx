@@ -12,29 +12,30 @@ const FirstSection = () => {
         {
             id: 1,
             title: 'Hand-Printed Bedsheets Collection',
-            subTitle: `Discover our exclusive range of meticulously crafted bedsheets for a touch of artistry and elegance.`,
+            subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
             image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/d95pXDVw95c58Dkq/img-20240629-wa0052-dJoJv4G0GvI1Kq6Q.jpg',
         },
         {
             id: 2,
             title: 'Hand-Printed Bedsheets Collection',
-            subTitle: `Discover our exclusive range of meticulously crafted bedsheets for a touch of artistry and elegance.`,
+            subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
             image: Slider1
         },
         {
             id: 3,
             title: 'Hand-Printed Bedsheets Collection',
-            subTitle: `Discover our exclusive range of meticulously crafted bedsheets for a touch of artistry and elegance.`,
+            subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
             image: Slider2
         },
         {
             id: 4,
             title: 'Hand-Printed Bedsheets Collection',
-            subTitle: `Discover our exclusive range of meticulously crafted bedsheets for a touch of artistry and elegance.`,
+            subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
             image: Slider3
         },
 
-    ]
+        ]
+        
     return (
 
         <div className="shopify-section velaFramework">
@@ -86,7 +87,12 @@ const FirstSection = () => {
                                             </div>
                                             <div className="slideshow-caption__desc mb-0 text bottomtop-4"
                                                 style={{ color: '#fafafa', fontSize: '18px', textAlign: 'start' }}>
-                                                {slide.subTitle}
+                                                {slide.subTitle.split('\n').map((line, index) => (
+                                                    <span key={index}>
+                                                        {line}
+                                                        <br />
+                                                    </span>
+                                                ))}
                                             </div>
                                             <div>
                                                 <NavLink className="btn slideshow-caption__btn bottomtop-5" to="/My-lettolino/shop"

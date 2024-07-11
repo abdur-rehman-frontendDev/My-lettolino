@@ -2,9 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Slider1 from '../../../assets/images/slider1.jpeg';
-import Slider2 from '../../../assets/images/slider2.jpeg';
-import Slider3 from '../../../assets/images/slider3.jpeg';
 
 const FirstSection = () => {
 
@@ -19,23 +16,23 @@ const FirstSection = () => {
             id: 2,
             title: 'Hand-Printed Bedsheets Collection',
             subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
-            image: Slider1
+            image: 'https://i.ibb.co/12q0RT0/slider1.jpg'
         },
         {
             id: 3,
             title: 'Hand-Printed Bedsheets Collection',
             subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
-            image: Slider2
+            image: 'https://i.ibb.co/h1Zjxtm/slider2.jpg'
         },
         {
             id: 4,
             title: 'Hand-Printed Bedsheets Collection',
             subTitle: `Discover our exclusive range of meticulously crafted bedsheets\nfor a touch of artistry and elegance.`,
-            image: Slider3
+            image: 'https://i.ibb.co/Wy07j0D/slider3.jpg'
         },
 
-        ]
-        
+    ]
+
     return (
 
         <div className="shopify-section velaFramework">

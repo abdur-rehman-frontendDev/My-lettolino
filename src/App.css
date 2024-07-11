@@ -7971,3 +7971,11 @@ a {
     padding: 4px;
     border-radius: 10px;
 }
+
+.infiniteLoader {
+    background: #e4a958;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}

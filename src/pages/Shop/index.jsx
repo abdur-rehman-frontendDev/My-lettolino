@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import { useCart } from '../../context/CartContext';
 
 const ShopPage = () => {
 
     const { addToCart } = useCart();
 
-    const productData = [
+    const initialData = [
         {
             id: 1,
             name: 'Geometric Design Bedsheet',
@@ -100,103 +101,117 @@ const ShopPage = () => {
             url: 'paisley-pattern-bedsheet',
             discount: -50
         },
-        {
-            id: 9,
-            name: 'Classic White Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
-            price: 25.99,
-            quantity: 1,
-            total: 25.99,
-            url: 'classic-white-bedsheet',
-            available: 'SOLD OUT'
-        },
-        {
-            id: 10,
-            name: 'Vintage Striped Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
-            price: 37.99,
-            quantity: 1,
-            total: 37.99,
-            url: 'vintage-striped-bedsheet',
-            discount: -20
-        },
-        {
-            id: 11,
-            name: 'Geometric Design Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
-            price: 39.99,
-            quantity: 1,
-            total: 39.99,
-            url: 'geometric-design-bedsheet',
-        },
-        {
-            id: 12,
-            name: 'Paisley Pattern Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
-            price: 34.99,
-            quantity: 1,
-            total: 34.99,
-            url: 'paisley-pattern-bedsheet',
-            discount: -50
-        },
-        {
-            id: 13,
-            name: 'Geometric Design Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
-            price: 39.99,
-            quantity: 1,
-            total: 39.99,
-            url: 'geometric-design-bedsheet',
-        },
-        {
-            id: 14,
-            name: 'Paisley Pattern Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
-            price: 34.99,
-            quantity: 1,
-            total: 34.99,
-            url: 'paisley-pattern-bedsheet',
-        },
-        {
-            id: 15,
-            name: 'Classic White Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
-            price: 25.99,
-            quantity: 1,
-            total: 25.99,
-            url: 'classic-white-bedsheet',
-            available: 'SOLD OUT'
-        },
-        {
-            id: 16,
-            name: 'Vintage Striped Bedsheet',
-            vendor: 'Love & Bravery',
-            imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
-            imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
-            price: 37.99,
-            quantity: 1,
-            total: 37.99,
-            url: 'vintage-striped-bedsheet',
-        },
-
     ];
 
+    const totalRecodes = 16;
+    const [productData, setProductData] = useState(initialData);
     const [modalShow, setModalShow] = useState(false);
     const [currentProduct, setCurrentProduct] = useState(null);
+
+    const fetchData = () => {
+        setTimeout(() => {
+            const newProducts = [
+                {
+                    id: 9,
+                    name: 'Classic White Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
+                    price: 25.99,
+                    quantity: 1,
+                    total: 25.99,
+                    url: 'classic-white-bedsheet',
+                    available: 'SOLD OUT'
+                },
+                {
+                    id: 10,
+                    name: 'Vintage Striped Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
+                    price: 37.99,
+                    quantity: 1,
+                    total: 37.99,
+                    url: 'vintage-striped-bedsheet',
+                    discount: -20
+                },
+                {
+                    id: 11,
+                    name: 'Geometric Design Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
+                    price: 39.99,
+                    quantity: 1,
+                    total: 39.99,
+                    url: 'geometric-design-bedsheet',
+                },
+                {
+                    id: 12,
+                    name: 'Paisley Pattern Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
+                    price: 34.99,
+                    quantity: 1,
+                    total: 34.99,
+                    url: 'paisley-pattern-bedsheet',
+                    discount: -50
+                },
+                {
+                    id: 13,
+                    name: 'Geometric Design Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/cxj94mm/B102-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/qWHb5bZ/B102-Closeup.jpg',
+                    price: 39.99,
+                    quantity: 1,
+                    total: 39.99,
+                    url: 'geometric-design-bedsheet',
+                },
+                {
+                    id: 14,
+                    name: 'Paisley Pattern Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/qjFgsW9/B103-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/Bqqd2MN/B103-Closeup.jpg',
+                    price: 34.99,
+                    quantity: 1,
+                    total: 34.99,
+                    url: 'paisley-pattern-bedsheet',
+                },
+                {
+                    id: 15,
+                    name: 'Classic White Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/mqD5FWP/B104-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/s1qxWXj/B104-Closeup.jpg',
+                    price: 25.99,
+                    quantity: 1,
+                    total: 25.99,
+                    url: 'classic-white-bedsheet',
+                    available: 'SOLD OUT'
+                },
+                {
+                    id: 16,
+                    name: 'Vintage Striped Bedsheet',
+                    vendor: 'Love & Bravery',
+                    imgPrimary: 'https://i.ibb.co/qnrW0d9/B105-Main-Display.jpg',
+                    imgSecondary: 'https://i.ibb.co/5YSfKr2/B105-Closeup.jpg',
+                    price: 37.99,
+                    quantity: 1,
+                    total: 37.99,
+                    url: 'vintage-striped-bedsheet',
+                },
+            ];
+
+            if (productData.length === totalRecodes) {
+                return false;
+            } else {
+                setProductData([...productData, ...newProducts]);
+            }
+        }, 1500);
+    };
 
     const handleCartQuickView = (product) => {
         setModalShow(true);
@@ -211,94 +226,96 @@ const ShopPage = () => {
 
         <>
             <div className="shopify-section velaFramework">
-                <section className="vela-section overflow-hidden"
-                    style={{ padding: '70px 0 50px', margin: '0 0 30px' }}>
+                <section className="vela-section overflow-hidden" style={{ padding: '70px 0 50px', margin: '0 0 30px' }}>
                     <div className="container">
                         <div className="vela-section__inner">
                             <div className="vela-section__content">
-                                <div className="row g-md-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
-                                    {productData.map((product, index) => (
-                                        <div className="col mb-4">
-                                            <div className="product-card product-grid">
-                                                <div className="product-card__image-wrapper">
-                                                    <NavLink className="product-card__image-link"
-                                                        to={`/My-lettolino/product/${product.url}`}>
-                                                        <span className="img-primary">
-                                                            <div className="card_wrap">
-                                                                <div className="cartCard__image position-relative js lazyloaded"
-                                                                    style={{
-                                                                        paddingTop: '136.58%',
-                                                                        backgroundImage: `url(${product.imgPrimary})`
-                                                                    }}>
-                                                                    {product.discount && (
-                                                                        <div className="product-card__label">
-                                                                            <span className="label-on-sale">
-                                                                                <span className="d-block overflow-hidden">
-                                                                                    {product.discount}%
+                                <InfiniteScroll
+                                    dataLength={productData.length}
+                                    next={fetchData}
+                                    endMessage={''}
+                                    hasMore={productData.length !== totalRecodes}
+                                    style={{ height: '100%', overflow: 'hidden' }}
+                                    loader={
+                                        <h4 className='infiniteLoader'>
+                                            Loading...
+                                        </h4>
+                                    }
+                                >
+                                    <div className="row g-md-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+                                        {productData.map((product, index) => (
+                                            <div className="col mb-4" key={index}>
+                                                <div className="product-card product-grid">
+                                                    <div className="product-card__image-wrapper">
+                                                        <NavLink className="product-card__image-link" to={`/My-lettolino/product/${product.url}`}>
+                                                            <span className="img-primary">
+                                                                <div className="card_wrap">
+                                                                    <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgPrimary})` }}>
+                                                                        {product.discount && (
+                                                                            <div className="product-card__label">
+                                                                                <span className="label-on-sale">
+                                                                                    <span className="d-block overflow-hidden">{product.discount}%</span>
                                                                                 </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    )}
-                                                                    {product.available && (
-                                                                        <div className="product-card__label">
-                                                                            <span className="label-sold-out">
-                                                                                <span className="d-block overflow-hidden">
-                                                                                    {product.available}
+                                                                            </div>
+                                                                        )}
+                                                                        {product.available && (
+                                                                            <div className="product-card__label">
+                                                                                <span className="label-sold-out">
+                                                                                    <span className="d-block overflow-hidden">{product.available}</span>
                                                                                 </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    )}
+                                                                            </div>
+                                                                        )}
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </span>
-                                                        <span className="img-secondary position-absolute">
-                                                            <div className="card_wrap">
-                                                                <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgSecondary})` }}></div>
-                                                            </div>
-                                                        </span>
-                                                    </NavLink>
-                                                    <div className="product-card__buttons position-absolute d-flex w-100 align-items-center start-0 end-0">
-                                                        <div className="product-card__form w-100 mx-1">
-                                                            <button
-                                                                className="js-btn-addtocart btn btn--add-to-cart btn-default"
-                                                                onClick={() => handleAddToCart(product)}
-                                                                type="submit" value="Submit" title="Add to Cart"
-                                                            >
-                                                                <span>Add to Cart</span>
-                                                            </button>
-                                                        </div>
-                                                        <NavLink
-                                                            className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default"
-                                                            title="Quickview" onClick={() => { handleCartQuickView(product) }}
-                                                        >
-                                                            <svg width={18} height={18} xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1056 896">
-                                                                <path fill="currentColor" d="M531 257q-39 0-74.5 15.5t-61 41t-41 61T339 449t15.5 75t41 61.5t61 40.5t74.5 15q53 0 97-25.5t69.5-69.5t25.5-97q0-79-56-135.5T531 257zm0 320q-34 0-64-17.5t-47.5-47T402 448q0-26 10-49.5t27.5-41t41-27.5t49.5-10q53 0 90.5 37.5T658 448t-37 91t-90 38zm509-136q0-1-.5-2.5t-.5-2.5t-.5-1.5l-.5-.5v-1l-1-2q-68-157-206-246.5T530 95q-107 0-206 39T144.5 249.5T18 431v2.5l-1 1.5v3l-1 2q-1 6-1 9q0 2 .5 4t.5 4q0 1 1 3v2l.5 1.5l.5.5v3q69 157 207.5 245.5T528 801q107 0 205.5-38.5T912 648t125-181q1 0 1-1v-1.5l.5-1l.5-.5v-3l1-2q1-6 1-9q0-2-.5-4t-.5-4zM528 737q-142 0-263-74.5T81 449q63-139 185-214.5T530 159q92 0 176.5 32T862 289.5T975 449q-63 139-184 213.5T528 737z" />
-                                                            </svg>
+                                                            </span>
+                                                            <span className="img-secondary position-absolute">
+                                                                <div className="card_wrap">
+                                                                    <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgSecondary})` }}></div>
+                                                                </div>
+                                                            </span>
                                                         </NavLink>
-                                                    </div>
-                                                </div>
-                                                <div className="product-card__content text-center pt-1">
-                                                    <div className="product-card__content--inner  position-relative mt-3">
-                                                        <div className="product-card__name">
-                                                            <NavLink className='h6' to={`/My-lettolino/product/${product.url}`}>{product.name}</NavLink>
+                                                        <div className="product-card__buttons position-absolute d-flex w-100 align-items-center start-0 end-0">
+                                                            <div className="product-card__form w-100 mx-1">
+                                                                <button
+                                                                    className="js-btn-addtocart btn btn--add-to-cart btn-default"
+                                                                    onClick={() => handleAddToCart(product)}
+                                                                    type="submit" value="Submit" title="Add to Cart"
+                                                                >
+                                                                    <span>Add to Cart</span>
+                                                                </button>
+                                                            </div>
+                                                            <NavLink
+                                                                className="js-btn-quickview d-flex justify-content-center align-items-center btn--quickview mx-1 btn-default"
+                                                                title="Quickview" onClick={() => handleCartQuickView(product)}
+                                                            >
+                                                                <svg width={18} height={18} xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1056 896">
+                                                                    <path fill="currentColor" d="M531 257q-39 0-74.5 15.5t-61 41t-41 61T339 449t15.5 75t41 61.5t61 40.5t74.5 15q53 0 97-25.5t69.5-69.5t25.5-97q0-79-56-135.5T531 257zm0 320q-34 0-64-17.5t-47.5-47T402 448q0-26 10-49.5t27.5-41t41-27.5t49.5-10q53 0 90.5 37.5T658 448t-37 91t-90 38zm509-136q0-1-.5-2.5t-.5-2.5t-.5-1.5l-.5-.5v-1l-1-2q-68-157-206-246.5T530 95q-107 0-206 39T144.5 249.5T18 431v2.5l-1 1.5v3l-1 2q-1 6-1 9q0 2 .5 4t.5 4q0 1 1 3v2l.5 1.5l.5.5v3q69 157 207.5 245.5T528 801q107 0 205.5-38.5T912 648t125-181q1 0 1-1v-1.5l.5-1l.5-.5v-3l1-2q1-6 1-9q0-2-.5-4t-.5-4zM528 737q-142 0-263-74.5T81 449q63-139 185-214.5T530 159q92 0 176.5 32T862 289.5T975 449q-63 139-184 213.5T528 737z" />
+                                                                </svg>
+                                                            </NavLink>
                                                         </div>
-                                                        <div className="product-group-price d-flex align-items-center justify-content-center">
-                                                            <div className="product-price ">
-                                                                <span className="money h6">${product.price}</span>
+                                                    </div>
+                                                    <div className="product-card__content text-center pt-1">
+                                                        <div className="product-card__content--inner  position-relative mt-3">
+                                                            <div className="product-card__name">
+                                                                <NavLink className='h6' to={`/My-lettolino/product/${product.url}`}>{product.name}</NavLink>
+                                                            </div>
+                                                            <div className="product-group-price d-flex align-items-center justify-content-center">
+                                                                <div className="product-price ">
+                                                                    <span className="money h6">${product.price}</span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
-                                </div>
+                                        ))}
+                                    </div>
+                                </InfiniteScroll>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-
 
             {/* Modal */}
             <Modal

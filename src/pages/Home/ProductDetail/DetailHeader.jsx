@@ -14,7 +14,7 @@ const DetailHeader = () => {
                 </div>
                 <div className="container">
                     <div className="vela-breadcrumbs__inner align-items-center flex-column">
-                        <h1 className="vela-breadcrumbs__title mb-3 d-none d-lg-block">
+                        <h1 className="vela-breadcrumbs__title mb-3">
                             Products
                         </h1>
                         <ol className="breadcrumb m-0">

@@ -26,7 +26,10 @@ const Navbar = () => {
                                                 className="header__heading-logo img-fluid"
                                                 loading="lazy"
                                                 src={LettoLinoGray}
-                                                style={{ filter: 'drop-shadow(0px 0px 0px #333a3f)' }}
+                                                style={{
+                                                    filter: 'drop-shadow(0px 0px 0px #333a3f)',
+                                                    minWidth: '150px'
+                                                }}
                                             />
                                         </NavLink>
                                     </div>
@@ -36,16 +39,36 @@ const Navbar = () => {
                                         <nav className="main-menu__wrap">
                                             <ul className="main-menu__nav list-unstyled d-flex flex-wrap m-0">
                                                 <li className="main-menu__nav-item">
-                                                    <NavLink to="/My-lettolino/home">Home</NavLink>
+                                                    <NavLink
+                                                        to="/My-lettolino/home"
+                                                        className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
+                                                    >
+                                                        <span>Home</span>
+                                                    </NavLink>
                                                 </li>
                                                 <li className="main-menu__nav-item">
-                                                    <NavLink to="/My-lettolino/shop">Shop</NavLink>
+                                                    <NavLink
+                                                        to="/My-lettolino/shop"
+                                                        className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
+                                                    >
+                                                        Shop
+                                                    </NavLink>
                                                 </li>
                                                 <li className="main-menu__nav-item">
-                                                    <NavLink to="/My-lettolino/about">About</NavLink>
+                                                    <NavLink
+                                                        to="/My-lettolino/about"
+                                                        className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
+                                                    >
+                                                        About
+                                                    </NavLink>
                                                 </li>
                                                 <li className="main-menu__nav-item">
-                                                    <NavLink to="/My-lettolino/contact">Contact</NavLink>
+                                                    <NavLink
+                                                        to="/My-lettolino/contact"
+                                                        className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
+                                                    >
+                                                        Contact
+                                                    </NavLink>
                                                 </li>
                                             </ul>
                                         </nav>

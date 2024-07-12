@@ -254,6 +254,7 @@
 }
 
 .header-wrap {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: var(--header-bg);
     color: var(--header-color);
     transition: all 0.2s ease-in-out 0s;
@@ -7969,7 +7970,7 @@ a {
 .checkout-img-fluid {
     border: 1px solid #cdc8c8;
     padding: 4px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .infiniteLoader {
@@ -7989,4 +7990,16 @@ a {
     .vela-breadcrumbs {
         min-height: 150px;
     }
+}
+
+.active-nav_itme {
+    color: #e4a958 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 6px;
+}
+
+.top-blocks--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }

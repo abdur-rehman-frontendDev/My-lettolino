@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LettoLinoGray from '../assets/LettoLino-Gray.png';
 import LettoLinoGolden from '../assets/LettoLino-Golden.png';
 import CartInfo from '../pages/Cart/CartInfo';
 import { useCart } from '../context/CartContext';
+import { CloseOutline, ReorderThreeOutline } from 'react-ionicons';
 
 const Navbar = () => {
 
     const { cart } = useCart();
     const cartItemCount = cart.length;
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <div className="shopify-section" id="shopify-section-header">
@@ -34,7 +40,7 @@ const Navbar = () => {
                                         </NavLink>
                                     </div>
                                 </div>
-                                <div className="header-center col-auto d-none d-lg-block">
+                                <div className="header-center col-auto d-none d-md-block">
                                     <div className="main-menu">
                                         <nav className="main-menu__wrap">
                                             <ul className="main-menu__nav list-unstyled d-flex flex-wrap m-0">
@@ -105,7 +111,52 @@ const Navbar = () => {
                                         <p />
                                     </div>
                                 </div>
+                                <div className="col-auto d-flex d-md-none ps-0">
+                                    <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+                                        {isMenuOpen ? <CloseOutline color={'#00000'} /> : <ReorderThreeOutline color={'#00000'} />}
+                                    </button>
+                                </div>
                             </div>
+                        </div>
+                        <div className={`drawer-menu ${isMenuOpen ? 'open' : ''}`}>
+                            <ul className="navbar-nav text-center">
+                                <li className="nav-item h6">
+                                    <NavLink
+                                        to="/My-lettolino/home"
+                                        className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
+                                        onClick={toggleMenu}
+                                    >
+                                        Home
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item h6">
+                                    <NavLink
+                                        to="/My-lettolino/shop"
+                                        className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
+                                        onClick={toggleMenu}
+                                    >
+                                        Shop
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item h6">
+                                    <NavLink
+                                        to="/My-lettolino/about"
+                                        className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
+                                        onClick={toggleMenu}
+                                    >
+                                        About
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item h6">
+                                    <NavLink
+                                        to="/My-lettolino/contact"
+                                        className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
+                                        onClick={toggleMenu}
+                                    >
+                                        Contact
+                                    </NavLink>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

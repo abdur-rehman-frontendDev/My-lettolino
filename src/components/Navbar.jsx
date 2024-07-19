@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LettoLinoGray from '../assets/LettoLino-Gray.png';
-import LettoLinoGolden from '../assets/LettoLino-Golden.png';
 import CartInfo from '../pages/Cart/CartInfo';
 import { useCart } from '../context/CartContext';
 import { CloseOutline, ReorderThreeOutline } from 'react-ionicons';

@@ -4,7 +4,7 @@ import React from 'react';
 const ComingSoon = ({ page }) => {
 
   return (
-    <div className="container">
+    <div className="container py-5">
       <div className="row justify-content-center">
         <div className="col-md-10 main-title">
           <h1>

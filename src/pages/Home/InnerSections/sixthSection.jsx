@@ -22,7 +22,7 @@ const SixthSection = () => {
                                         Discover a rotating selection of our finest creations, each meticulously
                                         crafted to elevate your sleep experience.
                                     </div>
-                                    <NavLink className="btn image-with-text__btn--3" to="#">
+                                    <NavLink className="btn image-with-text__btn--3" to="/My-lettolino/shop">
                                         VIEW PROMOTIONS
                                     </NavLink>
                                 </div>

@@ -30,7 +30,7 @@ const SecondSection = () => {
         },
         {
             title: "Vintage Floral Print Bedsheet",
-            backgroundImage: 'https://i.ibb.co/TMb36Mr/B104-Flat-Pattern.jpg',
+            backgroundImage: 'https://i.ibb.co/CbdsP0z/B104-Flat-Pattern.jpg',
             detailLink: "elegant-green-b102",
             items: [
                 {

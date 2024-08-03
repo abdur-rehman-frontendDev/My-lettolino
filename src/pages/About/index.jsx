@@ -11,7 +11,7 @@ const AboutPage = () => {
     const ourTeam = [
         { id: 1, image: 'https://pitb.gov.pk/system/files/Sajid-Latif1_0.jpg', name: 'Sajid Latif', role: 'CEO & Founder' },
         { id: 2, image: 'https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/437601796_1888090221704073_8245330731416229164_n.jpg?ccb=11-4&oh=01_Q5AaINhkIxfrmk0pag-Li-Lucs1DnEARkTswJAU3-HpBY-4g&oe=66A70F79&_nc_sid=e6ed6c&_nc_cat=111', name: 'Hafiz Salman', role: 'Production Manager' },
-        { id: 3, image: 'https://media.licdn.com/dms/image/D4D03AQGkz4P4aI9PtA/profile-displayphoto-shrink_800_800/0/1708088390925?e=1726704000&v=beta&t=5fqndXnEyfvJ_7OhxRmz-7ysZjwdvZi67L8CO8DjLkE', name: 'Abdur Rehman', role: 'Lead Designer' },
+        { id: 3, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqU03BVB47JtHNOeY0t21fcHE5qJr8ED2Ig&s', name: 'Abdur Rehman', role: 'Lead Designer' },
         { id: 4, image: 'https://citybook.pk/blog/wp-content/uploads/2019/08/Hassan-Sharyar-Yasin-HSY-1024x1024.jpeg', name: 'Wahaj Khan', role: 'Marketing Specialist' },
         { id: 5, image: 'https://www.mariab.pk/cdn/shop/files/maria-3.jpg?height=1200&v=1664868424', name: 'Maria B', role: 'Quality Control Manager' },
         { id: 6, image: 'https://hamariweb.com/profiles/images/profile/9910-700-8129.jpg', name: 'Deepak Perwani', role: 'Customer Service Representative' }

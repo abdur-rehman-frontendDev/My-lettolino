@@ -253,7 +253,7 @@ const ShopPage = () => {
                                             <div className="col mb-4" key={index}>
                                                 <div className="product-card product-grid">
                                                     <div className="product-card__image-wrapper">
-                                                        <NavLink className="product-card__image-link" to={`/My-lettolino/product/${product.url}`}>
+                                                        <NavLink className="product-card__image-link" to={`/lettolino/product/${product.url}`}>
                                                             <span className="img-primary">
                                                                 <div className="card_wrap">
                                                                     <div className="cartCard__image position-relative js lazyloaded" style={{ paddingTop: '136.58%', backgroundImage: `url(${product.imgPrimary})` }}>
@@ -303,7 +303,7 @@ const ShopPage = () => {
                                                     <div className="product-card__content text-center pt-1">
                                                         <div className="product-card__content--inner  position-relative mt-3">
                                                             <div className="product-card__name">
-                                                                <NavLink className='h6' to={`/My-lettolino/product/${product.url}`}>{product.name}</NavLink>
+                                                                <NavLink className='h6' to={`/lettolino/product/${product.url}`}>{product.name}</NavLink>
                                                             </div>
                                                             <div className="product-group-price d-flex align-items-center justify-content-center">
                                                                 <div className="product-price ">

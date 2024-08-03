@@ -168,7 +168,7 @@ const ViewCart = () => {
                                 <div className="cart__ctas">
                                     <button
                                         disabled={cartItems?.length == 0}
-                                        className="cart__checkout-button btn btn-default" style={{ width: '100%' }} name="checkout" onClick={() => { navigate(`/My-lettolino/checkout`) }}>
+                                        className="cart__checkout-button btn btn-default" style={{ width: '100%' }} name="checkout" onClick={() => { navigate(`/lettolino/checkout`) }}>
                                         Check out
                                     </button>
                                 </div>

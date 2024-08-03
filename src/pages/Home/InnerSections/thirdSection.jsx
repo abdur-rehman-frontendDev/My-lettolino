@@ -17,7 +17,7 @@ const ThirdSection = () => {
                             FOR YOUR COMFORT
                         </div>
                         <div className="background-parallax__text--2 h3 lh-1">
-                            <NavLink to="/My-lettolino/shop">
+                            <NavLink to="/lettolino/shop">
                                 View Collection
                             </NavLink>
                         </div>

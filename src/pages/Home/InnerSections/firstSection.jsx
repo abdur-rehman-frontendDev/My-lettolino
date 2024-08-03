@@ -92,7 +92,7 @@ const FirstSection = () => {
                                                 ))}
                                             </div>
                                             <div>
-                                                <NavLink className="btn slideshow-caption__btn bottomtop-5" to="/My-lettolino/shop"
+                                                <NavLink className="btn slideshow-caption__btn bottomtop-5" to="/lettolino/shop"
                                                     style={{
                                                         borderRadius: '30px', borderColor: '#4e4e4e',
                                                         backgroundColor: '#4e4e4e', color: '#ffffff',

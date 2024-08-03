@@ -19,13 +19,13 @@ const DetailHeader = () => {
                         </h1>
                         <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item breadcrumb__item">
-                                <NavLink className="breadcrumb__link h5" to="/My-lettolino/home" title="Home" >
+                                <NavLink className="breadcrumb__link h5" to="/lettolino/home" title="Home" >
                                     Home
                                 </NavLink>
 
                             </li>
                             <li className="breadcrumb-item breadcrumb__item itemprop=">
-                                <NavLink className="breadcrumb__link h5" to="/My-lettolino/shop" title="Shop">
+                                <NavLink className="breadcrumb__link h5" to="/lettolino/shop" title="Shop">
                                     Shop
                                 </NavLink>
                             </li>

@@ -36,17 +36,17 @@ const App = () => {
         </div>
         <ScrollToTop />
         <Routes>
-          <Route path="/My-lettolino" element={<Navigate to="/My-lettolino/home" />} />
-          <Route path="/My-lettolino/" element={<Navigate to="/My-lettolino/home" />} />
-          <Route path="/My-lettolino/home" element={<HomePage />} />
-          <Route path="/My-lettolino/product/:slug" element={<ProductDetail />} />
-          <Route path="/My-lettolino/blog-detail" element={<BlogDetail />} />
-          <Route path="/My-lettolino/shop" element={<ShopPage />} />
-          <Route path="/My-lettolino/about" element={<AboutPage />} />
-          <Route path="/My-lettolino/contact" element={<ContactPage />} />
-          <Route path="/My-lettolino/cart" element={<ViewCart />} />
-          <Route path="/My-lettolino/checkout" element={<CheckoutCart />} />
-          <Route path="*" element={<Navigate to="/My-lettolino/home" />} />
+          <Route path="/lettolino" element={<Navigate to="/lettolino/home" />} />
+          <Route path="/lettolino/" element={<Navigate to="/lettolino/home" />} />
+          <Route path="/lettolino/home" element={<HomePage />} />
+          <Route path="/lettolino/product/:slug" element={<ProductDetail />} />
+          <Route path="/lettolino/blog-detail" element={<BlogDetail />} />
+          <Route path="/lettolino/shop" element={<ShopPage />} />
+          <Route path="/lettolino/about" element={<AboutPage />} />
+          <Route path="/lettolino/contact" element={<ContactPage />} />
+          <Route path="/lettolino/cart" element={<ViewCart />} />
+          <Route path="/lettolino/checkout" element={<CheckoutCart />} />
+          <Route path="*" element={<Navigate to="/lettolino/home" />} />
         </Routes>
         <Footer />
       </main>

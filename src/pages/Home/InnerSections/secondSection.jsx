@@ -98,7 +98,7 @@ const SecondSection = () => {
                             <div className="card_wrap">
                                 <div
                                     className="card__image position-relative js lazyloaded"
-                                    onClick={() => { navigate(`/My-lettolino/product/${lookbookItem.detailLink}`) }}
+                                    onClick={() => { navigate(`/lettolino/product/${lookbookItem.detailLink}`) }}
                                     style={{
                                         cursor: 'pointer',
                                         paddingTop: '100%',
@@ -117,12 +117,12 @@ const SecondSection = () => {
                                         <div className="lookbook-card__content">
                                             <div className="lookbook-product">
                                                 <NavLink className="lookbook-product__img img-fluid"
-                                                    to={`/My-lettolino/product/${item.detailLink}`}>
+                                                    to={`/lettolino/product/${item.detailLink}`}>
                                                     <img className="img-fluid" src={item.image} alt={item.title} />
                                                 </NavLink>
                                                 <div className="lookbook-product__content">
                                                     <NavLink className="lookbook-product__title"
-                                                        to={`/My-lettolino/product/${item.detailLink}`}>
+                                                        to={`/lettolino/product/${item.detailLink}`}>
                                                         {item.title}
                                                     </NavLink>
                                                     <div className="lookbook-product__price">
@@ -137,7 +137,7 @@ const SecondSection = () => {
                                                     </div>
                                                     <div className="lookbook-product__bottom">
                                                         <NavLink className="lookbook-product__detail"
-                                                            to={`/My-lettolino/product/${item.detailLink}`}>View detail</NavLink>
+                                                            to={`/lettolino/product/${item.detailLink}`}>View detail</NavLink>
                                                     </div>
                                                 </div>
                                             </div>

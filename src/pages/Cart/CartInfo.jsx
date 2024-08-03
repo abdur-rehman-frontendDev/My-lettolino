@@ -12,8 +12,8 @@ const CartInfo = () => {
 
     const subtotal = cart.reduce((total, item) => total + item.total, 0).toFixed(2);
 
-    const handleViewCart = () => navigate('/My-lettolino/cart');
-    const handleCheckout = () => navigate('/My-lettolino/checkout');
+    const handleViewCart = () => navigate('/lettolino/cart');
+    const handleCheckout = () => navigate('/lettolino/checkout');
 
     return (
         <div className="header-cart__content">

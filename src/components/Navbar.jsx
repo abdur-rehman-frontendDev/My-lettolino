@@ -37,7 +37,7 @@ const Navbar = () => {
                                     <div className="header-left px-0 px-sm-3 col col-lg-auto">
                                         <div className="header-logo" style={{ maxWidth: '115px' }}>
                                             <h1 className="sr-only">Exquisite hand-printed bedsheets</h1>
-                                            <NavLink to="/My-lettolino/home" className="header__heading-link d-flex">
+                                            <NavLink to="/lettolino/home" className="header__heading-link d-flex">
                                                 <img
                                                     alt="Letto & Lino"
                                                     className="header__heading-logo img-fluid"
@@ -57,7 +57,7 @@ const Navbar = () => {
                                                 <ul className="main-menu__nav list-unstyled d-flex flex-wrap m-0">
                                                     <li className="main-menu__nav-item">
                                                         <NavLink
-                                                            to="/My-lettolino/home"
+                                                            to="/lettolino/home"
                                                             className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
                                                         >
                                                             <span>Home</span>
@@ -65,7 +65,7 @@ const Navbar = () => {
                                                     </li>
                                                     <li className="main-menu__nav-item">
                                                         <NavLink
-                                                            to="/My-lettolino/shop"
+                                                            to="/lettolino/shop"
                                                             className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
                                                         >
                                                             Shop
@@ -73,7 +73,7 @@ const Navbar = () => {
                                                     </li>
                                                     <li className="main-menu__nav-item">
                                                         <NavLink
-                                                            to="/My-lettolino/about"
+                                                            to="/lettolino/about"
                                                             className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
                                                         >
                                                             About
@@ -81,7 +81,7 @@ const Navbar = () => {
                                                     </li>
                                                     <li className="main-menu__nav-item">
                                                         <NavLink
-                                                            to="/My-lettolino/contact"
+                                                            to="/lettolino/contact"
                                                             className={({ isActive }) => isActive ? 'active-nav_itme' : ''}
                                                         >
                                                             Contact
@@ -98,7 +98,7 @@ const Navbar = () => {
                                         <div className="header-cart cart-hover d-flex">
                                             <NavLink
                                                 className="js-header-cart header__icon position-relative"
-                                                to="/My-lettolino/cart"
+                                                to="/lettolino/cart"
                                             >
                                                 <svg
                                                     aria-hidden="true"
@@ -136,7 +136,7 @@ const Navbar = () => {
                                 <ul className="navbar-nav text-center">
                                     <li className="nav-item h6">
                                         <NavLink
-                                            to="/My-lettolino/home"
+                                            to="/lettolino/home"
                                             className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
                                             onClick={toggleMenu}
                                         >
@@ -145,7 +145,7 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item h6">
                                         <NavLink
-                                            to="/My-lettolino/shop"
+                                            to="/lettolino/shop"
                                             className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
                                             onClick={toggleMenu}
                                         >
@@ -154,7 +154,7 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item h6">
                                         <NavLink
-                                            to="/My-lettolino/about"
+                                            to="/lettolino/about"
                                             className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
                                             onClick={toggleMenu}
                                         >
@@ -163,7 +163,7 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item h6">
                                         <NavLink
-                                            to="/My-lettolino/contact"
+                                            to="/lettolino/contact"
                                             className={({ isActive }) => isActive ? 'active-nav_itme nav-link' : 'nav-link'}
                                             onClick={toggleMenu}
                                         >

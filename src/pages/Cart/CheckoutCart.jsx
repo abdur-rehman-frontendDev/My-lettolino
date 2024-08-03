@@ -88,7 +88,7 @@ const CheckoutCart = () => {
                             disabled={cart?.length === 0}
                             className="btn btn-default"
                             style={{ width: '100%' }} name="checkout"
-                            onClick={() => { navigate(`/My-lettolino/shop`) }}>
+                            onClick={() => { navigate(`/lettolino/shop`) }}>
                             Proceed to Checkout
                         </button>
                     </div>

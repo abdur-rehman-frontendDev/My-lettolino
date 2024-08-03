@@ -143,7 +143,7 @@ const RelatedProducts = () => {
                                             <div className="product-card product-grid">
                                                 <div className="product-card__image-wrapper">
                                                     <NavLink className="product-card__image-link"
-                                                        to={`/My-lettolino/product/${product.url}`}>
+                                                        to={`/lettolino/product/${product.url}`}>
                                                         <span className="img-primary">
                                                             <div className="card_wrap">
                                                                 <div className="card__image position-relative js lazyloaded"
@@ -177,7 +177,7 @@ const RelatedProducts = () => {
                                                     <div className="product-card__buttons position-absolute d-flex w-100 align-items-center start-0 end-0">
                                                         <div className="product-card__form w-100 mx-1">
                                                             <button className="js-btn-addtocart btn btn--add-to-cart btn-default"
-                                                                onClick={() => { navigate(`/My-lettolino/product/${product.url}`) }}
+                                                                onClick={() => { navigate(`/lettolino/product/${product.url}`) }}
                                                                 type="submit" value="Submit" title="Add to Cart" >
                                                                 <span>Add to Cart</span>
                                                             </button>
@@ -195,7 +195,7 @@ const RelatedProducts = () => {
                                                 <div className="product-card__content text-center pt-1">
                                                     <div className="product-card__content--inner  position-relative mt-3">
                                                         <div className="product-card__name">
-                                                            <NavLink to={`/My-lettolino/product/${product.url}`}>{product.name}</NavLink>
+                                                            <NavLink to={`/lettolino/product/${product.url}`}>{product.name}</NavLink>
                                                         </div>
                                                         <div className="product-group-price d-flex align-items-center justify-content-center">
                                                             <div className="product-price ">
